@@ -1,6 +1,6 @@
 ---
 layout: default
-ttitle: Services
+title: Services
 ---
 
 # Services
@@ -13,7 +13,7 @@ Practical technology setup, troubleshooting, and infrastructure guidance for ind
 
 ## Cybersecurity & Information Security
 
-Security-minded guidance for accounts, devices, workflows, physical/digital hardening, privacy practices, phishing awareness, MFA, and password management.
+Security-minded guidance for accounts, devices, workflows, physical and digital hardening, privacy practices, phishing awareness, MFA, and password management.
 
 ## Accessibility & Usability
 
