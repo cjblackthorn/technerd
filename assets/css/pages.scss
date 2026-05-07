@@ -1,0 +1,35 @@
+.page-header {
+  padding: 5rem 0 2rem;
+}
+
+.page-header h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.page-intro {
+  max-width: 70ch;
+  color: var(--text-secondary);
+}
+
+.content-section {
+  padding: 2rem 0 4rem;
+}
+
+.content-section h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p,
+.content-section li {
+  color: var(--text-secondary);
+}
+
+.content-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-top: 2rem;
+}
