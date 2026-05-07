@@ -1,0 +1,20 @@
+title: TechNerd Consulting
+description: Human-centered IT, cybersecurity, accessibility, and systems consulting.
+author: C. J. Blackthorn
+email: technerdconsultingllc@gmail.com
+url: "https://cjblackthorn.github.io"
+baseurl: "/technerd"
+
+markdown: kramdown
+permalink: pretty
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
