@@ -1,0 +1,33 @@
+---
+---
+
+/* Final mobile navigation polish */
+.brand-node {
+  width: 3.25rem;
+  height: 3.25rem;
+  object-fit: contain;
+}
+
+.mobile-header-brand {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.1rem);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.nav-container:has(.mobile-nav[open]) .mobile-header-brand {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-dropdown {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: 0;
+  width: min(18rem, 72vw);
+  z-index: 2000;
+}
+
+.mobile-nav-links {
+  margin-top: 0;
+}
