@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  width: min(92%, 1280px);
+  width: min(94%, 1440px);
   margin-inline: auto;
 }
 
@@ -51,18 +51,16 @@ body {
 .nav-container {
   position: relative;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
   padding: 1rem 0;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 3.25rem;
-  height: 3.25rem;
+  gap: 0.95rem;
   color: var(--accent-primary);
   text-decoration: none;
 }
@@ -72,6 +70,14 @@ body {
   width: 3.25rem;
   height: 3.25rem;
   object-fit: contain;
+}
+
+.desktop-brand-text {
+  color: var(--accent-primary);
+  font-size: 1.55rem;
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
 }
 
 .mobile-header-brand {
@@ -93,7 +99,7 @@ body {
 .nav-links,
 .mobile-nav-links {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -104,7 +110,8 @@ body {
 .mobile-nav-links a {
   color: var(--text-secondary);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 650;
+  font-size: 1rem;
 }
 
 .button {
@@ -196,12 +203,12 @@ body {
 }
 
 .hero {
-  padding: 4rem 0 5rem;
+  padding: 6rem 0 7rem;
   overflow: hidden;
 }
 
 .hero-content {
-  max-width: 48rem;
+  max-width: 64rem;
   margin-inline: auto;
   text-align: center;
 }
@@ -209,7 +216,7 @@ body {
 .hero-logo {
   margin-bottom: 1rem;
   color: var(--accent-primary);
-  font-size: clamp(2.6rem, 10vw, 4.5rem);
+  font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -217,16 +224,16 @@ body {
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 8vw, 3.8rem);
-  line-height: 1.08;
-  max-width: 13ch;
-  margin: 1.5rem auto;
+  font-size: clamp(3.8rem, 7vw, 6rem);
+  line-height: 0.98;
+  max-width: 10ch;
+  margin: 2rem auto;
 }
 
 .hero-lede {
   color: var(--text-secondary);
-  font-size: 1.08rem;
-  max-width: 36rem;
+  font-size: 1.2rem;
+  max-width: 52rem;
   margin-inline: auto;
 }
 
@@ -236,17 +243,17 @@ body {
   white-space: normal;
   overflow: visible;
   text-overflow: unset;
-  font-size: clamp(0.72rem, 2.6vw, 0.85rem);
-  letter-spacing: 0.09em;
+  font-size: 0.92rem;
+  letter-spacing: 0.14em;
   line-height: 1.6;
   text-align: center;
 }
 
 .availability-banner {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   color: var(--accent-primary);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.05rem;
   padding: 0;
   border: 0;
   background: transparent;
@@ -256,8 +263,8 @@ body {
 .eyebrow {
   color: var(--accent-primary);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  font-size: 0.88rem;
   font-weight: 800;
 }
 
@@ -266,27 +273,27 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 2.4rem;
 }
 
 .section-block {
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 
 .section-block h2,
 .accent-panel h2,
 .final-cta h2 {
-  font-size: clamp(2rem, 7vw, 3.2rem);
-  line-height: 1.12;
-  max-width: 18ch;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1.04;
+  max-width: 11ch;
 }
 
 .card-grid,
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .card,
@@ -294,40 +301,42 @@ body {
   background: rgba(15, 23, 42, 0.85);
   border: 1px solid rgba(103,232,249,0.14);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .card h3,
 .process-step h3 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 1.35rem;
+  font-size: 1.55rem;
 }
 
 .card p,
 .process-step p {
   color: var(--text-secondary);
+  font-size: 1.05rem;
 }
 
 .step-number {
   display: inline-block;
   margin-bottom: 1rem;
   color: var(--accent-primary);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
 }
 
 .accent-panel {
   background: linear-gradient(135deg, rgba(103,232,249,0.08), rgba(15,23,42,0.95));
   border: 1px solid rgba(103,232,249,0.14);
   border-radius: var(--radius-lg);
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .accent-panel p {
-  max-width: 36rem;
+  max-width: 46rem;
   color: var(--text-secondary);
+  font-size: 1.1rem;
 }
 
 .final-cta {
@@ -339,9 +348,9 @@ body {
 }
 
 .site-footer {
-  margin-top: 5rem;
+  margin-top: 6rem;
   border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .footer-brand {
@@ -350,13 +359,14 @@ body {
 
 .footer-brand p {
   color: var(--text-secondary);
-  max-width: 42rem;
+  max-width: 48rem;
+  font-size: 1.05rem;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .site-footer ul {
@@ -366,7 +376,7 @@ body {
 }
 
 .site-footer li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
 }
 
 .site-footer a {
@@ -381,8 +391,10 @@ body {
 @media (max-width: 900px) {
   .nav-container {
     grid-template-columns: 3.25rem 1fr auto;
+    gap: 1rem;
   }
 
+  .desktop-brand-text,
   .desktop-nav {
     display: none;
   }
@@ -397,6 +409,7 @@ body {
 
   .hero {
     padding-top: 3rem;
+    padding-bottom: 4rem;
   }
 
   .hero h1 {
