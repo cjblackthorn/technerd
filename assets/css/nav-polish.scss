@@ -1,33 +1,162 @@
 ---
 ---
 
-/* Final mobile navigation polish */
-.brand-node {
-  width: 3.25rem;
-  height: 3.25rem;
-  object-fit: contain;
+/* Final mobile navigation and premium layout polish */
+@media (max-width: 900px) {
+  .container {
+    width: min(94%, 1280px);
+  }
+
+  .brand,
+  .brand-node {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .mobile-header-brand {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(0.1rem);
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+
+  .nav-container:has(.mobile-nav[open]) .mobile-header-brand {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .mobile-nav summary {
+    min-width: 5.75rem;
+    padding: 0.72rem 0.95rem;
+    border-color: rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+  }
+
+  .mobile-dropdown {
+    position: absolute;
+    top: calc(100% + 0.65rem);
+    right: 0;
+    width: min(16.75rem, 74vw);
+    z-index: 2000;
+  }
+
+  .mobile-nav-links {
+    margin-top: 0;
+  }
+
+  .hero {
+    padding-top: 2.35rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-logo {
+    font-size: clamp(2.45rem, 9vw, 3.7rem);
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-eyebrow {
+    font-size: clamp(0.68rem, 2.35vw, 0.78rem);
+    letter-spacing: 0.08em;
+    line-height: 1.45;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.85rem, 7.35vw, 2.65rem);
+    line-height: 1.12;
+    max-width: 14.5ch;
+    margin-top: 1.3rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-lede {
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 34rem;
+  }
+
+  .availability-banner {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    margin-top: 1.6rem;
+  }
+
+  .button {
+    padding: 0.82rem 1.25rem;
+    border-radius: 11px;
+    font-size: 0.95rem;
+  }
+
+  .button-row {
+    gap: 0.85rem;
+    margin-top: 1.7rem;
+  }
+
+  .section-block {
+    padding: 4.15rem 0;
+  }
+
+  .section-block h2,
+  .accent-panel h2,
+  .final-cta h2 {
+    font-size: clamp(1.85rem, 6.4vw, 2.65rem);
+    line-height: 1.16;
+    max-width: 17ch;
+  }
+
+  .eyebrow {
+    font-size: 0.76rem;
+    letter-spacing: 0.13em;
+  }
+
+  .card-grid,
+  .process-grid {
+    gap: 1.15rem;
+    margin-top: 1.55rem;
+  }
+
+  .card,
+  .process-step {
+    padding: 1.55rem;
+    border-color: rgba(103,232,249,0.10);
+    box-shadow: 0 0.7rem 1.8rem rgba(0, 0, 0, 0.12);
+  }
+
+  .card h3,
+  .process-step h3 {
+    font-size: 1.22rem;
+    line-height: 1.24;
+  }
+
+  .card p,
+  .process-step p,
+  .accent-panel p {
+    font-size: 0.96rem;
+    line-height: 1.72;
+    color: rgba(203, 213, 225, 0.88);
+  }
+
+  .accent-panel {
+    padding: 2.15rem;
+    border-color: rgba(103,232,249,0.11);
+  }
+
+  .step-number {
+    font-size: 0.74rem;
+  }
+
+  .final-cta p {
+    color: rgba(203, 213, 225, 0.9);
+  }
 }
 
-.mobile-header-brand {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(0.1rem);
-  transition: opacity 180ms ease, transform 180ms ease;
-}
+@media (hover: hover) {
+  .button-primary:hover {
+    box-shadow: 0 0 1.4rem rgba(103,232,249,0.22);
+    transform: translateY(-1px);
+  }
 
-.nav-container:has(.mobile-nav[open]) .mobile-header-brand {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.mobile-dropdown {
-  position: absolute;
-  top: calc(100% + 0.75rem);
-  right: 0;
-  width: min(18rem, 72vw);
-  z-index: 2000;
-}
-
-.mobile-nav-links {
-  margin-top: 0;
+  .card:hover,
+  .process-step:hover {
+    border-color: rgba(103,232,249,0.22);
+  }
 }
