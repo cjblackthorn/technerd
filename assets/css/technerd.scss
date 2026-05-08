@@ -11,6 +11,7 @@
 
   --accent-primary: #67e8f9;
   --accent-secondary: #7dd3fc;
+  --accent-text: #06131a;
 
   --radius-md: 12px;
   --radius-lg: 18px;
@@ -90,6 +91,7 @@ body {
 
 .nav-cta {
   padding-inline: 1.1rem;
+  color: var(--accent-text) !important;
 }
 
 .hero {
@@ -134,18 +136,19 @@ body {
   padding: 0.9rem 1.4rem;
   border-radius: var(--radius-md);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
   transition: all 180ms ease;
 }
 
 .button-primary {
   background: var(--accent-primary);
-  color: var(--bg-primary);
+  color: var(--accent-text) !important;
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
   transform: translateY(-2px);
+  color: var(--accent-text) !important;
 }
 
 .button-secondary {
@@ -232,7 +235,7 @@ body {
   left: 1rem;
   top: 1rem;
   background: var(--accent-primary);
-  color: var(--bg-primary);
+  color: var(--accent-text);
   padding: 0.5rem 1rem;
 }
 
