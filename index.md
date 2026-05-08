@@ -6,7 +6,8 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
 
 <section class="hero">
   <div class="hero-content">
-    <p class="eyebrow">IT • Cybersecurity • Accessibility • Systems</p>
+    <div class="hero-logo" aria-label="TechNerd Consulting">{TechNerd}</div>
+    <p class="eyebrow hero-eyebrow">IT • Cybersecurity • Accessibility • Systems</p>
     <h1>Technology should work for people, not against them.</h1>
     <p class="hero-lede">
       Human-centered IT, cybersecurity, accessibility, and systems consulting for individuals, organizations, and small businesses.
@@ -44,7 +45,7 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
 
     <article class="card">
       <h3>Systems & Operations</h3>
-      <p>Workflow optimization, process improvement, troubleshooting, and sustainable operational planning.</p>
+      <p>Workflow optimization, process improvement, technical troubleshooting, and sustainable operational planning.</p>
     </article>
   </div>
 </section>
@@ -53,7 +54,7 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
   <p class="eyebrow">Approach</p>
   <h2>Accessible systems are better systems.</h2>
   <p>
-    Accessibility is not an afterthought. It is part of building technology that is usable, maintainable, secure, and sustainable for the people who rely on it.
+    Accessibility is part of building technology that is usable, maintainable, secure, and sustainable for the people who rely on it.
   </p>
 </section>
 
