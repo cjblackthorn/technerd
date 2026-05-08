@@ -125,6 +125,7 @@ body {
 
 .hero {
   padding: 4rem 0 5rem;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -158,11 +159,15 @@ body {
 }
 
 .hero-eyebrow {
-  white-space: nowrap;
-  font-size: clamp(0.58rem, 2vw, 0.85rem);
-  letter-spacing: 0.08em;
-  overflow: hidden;
-  text-overflow: clip;
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  font-size: clamp(0.72rem, 2.6vw, 0.85rem);
+  letter-spacing: 0.09em;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .availability-banner {
