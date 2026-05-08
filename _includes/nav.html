@@ -2,7 +2,6 @@
   <div class="container nav-container">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="TechNerd Consulting home">
       <img class="brand-node" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" aria-hidden="true">
-      <span class="brand-mark">{TechNerd}</span>
     </a>
 
     <nav class="desktop-nav" aria-label="Primary navigation">
@@ -25,6 +24,8 @@
     <details class="mobile-nav">
       <summary>Menu</summary>
       <nav aria-label="Mobile navigation">
+        <div class="mobile-menu-brand">{TechNerd}</div>
+
         <ul class="mobile-nav-links">
           <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
           <li><a href="{{ '/accessibility/' | relative_url }}">Accessibility</a></li>
