@@ -129,6 +129,8 @@ body {
 
 .hero-content {
   max-width: 48rem;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .hero-logo {
@@ -138,25 +140,29 @@ body {
   font-weight: 900;
   line-height: 1;
   letter-spacing: -0.04em;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: clamp(2.1rem, 7.5vw, 4rem);
+  font-size: clamp(2rem, 8vw, 3.8rem);
   line-height: 1.08;
-  max-width: 12ch;
-  margin-bottom: 1.5rem;
+  max-width: 13ch;
+  margin: 1.5rem auto;
 }
 
 .hero-lede {
   color: var(--text-secondary);
   font-size: 1.08rem;
   max-width: 36rem;
+  margin-inline: auto;
 }
 
 .hero-eyebrow {
   white-space: nowrap;
-  font-size: clamp(0.62rem, 2.45vw, 0.85rem);
-  letter-spacing: 0.11em;
+  font-size: clamp(0.58rem, 2vw, 0.85rem);
+  letter-spacing: 0.08em;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .availability-banner {
@@ -181,6 +187,7 @@ body {
 .button-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -194,7 +201,7 @@ body {
 .final-cta h2 {
   font-size: clamp(2rem, 7vw, 3.2rem);
   line-height: 1.12;
-  max-width: 14ch;
+  max-width: 18ch;
 }
 
 .card-grid,
@@ -319,19 +326,15 @@ body {
     padding-top: 3rem;
   }
 
-  .hero-logo {
-    text-align: center;
-  }
-
   .hero h1 {
-    font-size: clamp(2rem, 8.8vw, 3.35rem);
-    max-width: 11ch;
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    max-width: 13ch;
   }
 
   .section-block h2,
   .accent-panel h2,
   .final-cta h2 {
-    max-width: 11.5ch;
+    max-width: 16ch;
   }
 
   .footer-grid {
