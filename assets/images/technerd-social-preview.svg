@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="TechNerd Consulting social preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <circle cx="920" cy="160" r="120" fill="#67e8f9" opacity="0.08"/>
+  <circle cx="1040" cy="280" r="200" fill="#7dd3fc" opacity="0.05"/>
+
+  <text x="120" y="240" fill="#67e8f9" font-size="28" font-family="Arial, sans-serif" letter-spacing="4">
+    IT • CYBERSECURITY • ACCESSIBILITY • SYSTEMS
+  </text>
+
+  <text x="120" y="340" fill="#f3f4f6" font-size="72" font-weight="700" font-family="Arial, sans-serif">
+    TechNerd Consulting
+  </text>
+
+  <text x="120" y="420" fill="#d1d5db" font-size="34" font-family="Arial, sans-serif">
+    Human-centered technology systems.
+  </text>
+
+  <text x="120" y="470" fill="#d1d5db" font-size="34" font-family="Arial, sans-serif">
+    Accessible. Secure. Sustainable.
+  </text>
+</svg>
