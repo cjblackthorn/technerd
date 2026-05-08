@@ -5,30 +5,32 @@ title: Request Consultation
 
 # Request Consultation
 
-TechNerd Consulting uses a structured consultation and discovery workflow.
+TechNerd Consulting uses a structured consultation and discovery workflow designed to understand project goals, technical requirements, accessibility considerations, and operational needs before work begins.
 
 ## Helpful Information
 
 When requesting a consultation, please include:
 
-- your name
-- organization or business name if applicable
-- project type
-- accessibility needs or considerations
-- project goals
-- desired timeline
-- budget range if appropriate
+- Your Name
+- Organization or Business Name (If Applicable)
+- Project Type
+- Accessibility Needs or Considerations
+- Project Goals
+- Desired Timeline
+- Budget Range (If Appropriate)
 
 ## Review Process
 
 Requests are reviewed to assess:
 
-- project fit
-- scope
-- technical requirements
-- accessibility considerations
-- timeline expectations
+- Project Fit
+- Scope
+- Technical Requirements
+- Accessibility Considerations
+- Timeline Expectations
 
 ## Contact
 
-technerdconsultingllc@gmail.com
+Questions or consultation requests can be sent to:
+
+**technerdconsultingllc@gmail.com**
