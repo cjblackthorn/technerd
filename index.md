@@ -4,13 +4,13 @@ title: TechNerd Consulting
 description: Human-centered IT, cybersecurity, accessibility, and systems consulting.
 ---
 
-<section class="hero">
+<section class="hero hero-split">
   <div class="hero-content">
     <div class="hero-logo" aria-label="TechNerd Consulting">{TechNerd}</div>
     <p class="eyebrow hero-eyebrow">IT • Cybersecurity • Accessibility • Systems</p>
     <h1>Technology should work for people, not against them.</h1>
     <p class="hero-lede">
-      Human-centered IT, cybersecurity, accessibility, and systems consulting for individuals, organizations, and small businesses.
+      Human-centered technology consulting for real-world systems, accessibility needs, security concerns, and operational friction.
     </p>
 
     <div class="availability-banner">
@@ -24,41 +24,76 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
   </div>
 </section>
 
-<section class="section-block">
+<section class="trust-strip" aria-label="Consulting experience and focus areas">
+  <div class="trust-item">
+    <span>Operational IT</span>
+    <p>Infrastructure, troubleshooting, support, and workflow reality.</p>
+  </div>
+  <div class="trust-item">
+    <span>Security-Minded</span>
+    <p>Practical privacy, account, device, and risk reduction guidance.</p>
+  </div>
+  <div class="trust-item">
+    <span>Accessibility-Aware</span>
+    <p>Technology decisions shaped around usability and real human needs.</p>
+  </div>
+</section>
+
+<section class="section-block section-intro-left">
   <p class="eyebrow">Core Services</p>
   <h2>Secure, accessible, human-centered systems.</h2>
-  <div class="card-grid">
-    <article class="card">
+  <p class="section-lede">
+    TechNerd helps people and organizations untangle technology that has become confusing, fragile, inaccessible, insecure, or harder to maintain than it should be.
+  </p>
+  <div class="card-grid service-grid">
+    <article class="card service-card service-it">
       <h3>IT & Infrastructure</h3>
       <p>Practical technology setup, troubleshooting, and infrastructure guidance for real-world environments.</p>
     </article>
 
-    <article class="card">
+    <article class="card service-card service-security">
       <h3>Cybersecurity & Information Security</h3>
       <p>Security-minded guidance for accounts, devices, workflows, privacy practices, and physical or digital hardening.</p>
     </article>
 
-    <article class="card">
+    <article class="card service-card service-accessibility">
       <h3>Accessibility & Usability</h3>
       <p>Digital and physical accessibility-aware consulting for tools, workflows, websites, and adaptive setups.</p>
     </article>
 
-    <article class="card">
+    <article class="card service-card service-systems">
       <h3>Systems & Operations</h3>
       <p>Workflow optimization, process improvement, technical troubleshooting, and sustainable operational planning.</p>
     </article>
   </div>
 </section>
 
-<section class="section-block accent-panel">
+<section class="section-block accent-panel human-panel">
   <p class="eyebrow">Approach</p>
   <h2>Accessible systems are better systems.</h2>
   <p>
-    Accessibility is part of building technology that is usable, maintainable, secure, and sustainable for the people who rely on it.
+    Accessibility is not an afterthought. It is part of building technology that is usable, maintainable, secure, and sustainable for the people who rely on it.
+  </p>
+  <p>
+    Good systems reduce friction. They make the next step clearer, safer, and easier to sustain.
   </p>
 </section>
 
-<section class="section-block">
+<section class="section-block credibility-panel">
+  <p class="eyebrow">Why TechNerd</p>
+  <h2>Built from real operational experience.</h2>
+  <p class="section-lede">
+    TechNerd combines infrastructure support, cybersecurity thinking, accessibility awareness, and systems troubleshooting into practical consulting that respects both the technology and the people using it.
+  </p>
+  <div class="trust-grid">
+    <div>IT infrastructure and support</div>
+    <div>Identity, access, and security-minded workflows</div>
+    <div>Physical and digital accessibility considerations</div>
+    <div>Clear communication, documentation, and sustainable scope</div>
+  </div>
+</section>
+
+<section class="section-block section-intro-left">
   <p class="eyebrow">Who We Help</p>
   <h2>Practical support for real-world technology problems.</h2>
 
@@ -80,7 +115,7 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
   </div>
 </section>
 
-<section class="section-block">
+<section class="section-block section-intro-left">
   <p class="eyebrow">What We Do Not Provide</p>
   <h2>Clear boundaries create better outcomes.</h2>
 
@@ -102,7 +137,7 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
   </div>
 </section>
 
-<section class="section-block">
+<section class="section-block section-intro-left">
   <p class="eyebrow">Process</p>
   <h2>A structured consulting workflow.</h2>
 
