@@ -4,6 +4,8 @@
       <img class="brand-node" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" aria-hidden="true">
     </a>
 
+    <div class="mobile-header-brand">{TechNerd}</div>
+
     <nav class="desktop-nav" aria-label="Primary navigation">
       <ul class="nav-links">
         <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
@@ -23,9 +25,7 @@
 
     <details class="mobile-nav">
       <summary>Menu</summary>
-      <nav aria-label="Mobile navigation">
-        <div class="mobile-menu-brand">{TechNerd}</div>
-
+      <nav aria-label="Mobile navigation" class="mobile-dropdown">
         <ul class="mobile-nav-links">
           <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
           <li><a href="{{ '/accessibility/' | relative_url }}">Accessibility</a></li>
