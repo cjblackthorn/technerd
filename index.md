@@ -105,13 +105,37 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
   <p class="eyebrow">Process</p>
   <h2>A structured consulting workflow.</h2>
 
-  <ol class="process-list">
-    <li>Request</li>
-    <li>Discovery Review</li>
-    <li>Consultation</li>
-    <li>Proposal & Scope</li>
-    <li>Engagement</li>
-  </ol>
+  <div class="process-grid">
+    <article class="process-step">
+      <span class="step-number">01</span>
+      <h3>Request</h3>
+      <p>You share the problem, goal, accessibility needs, and basic project context.</p>
+    </article>
+
+    <article class="process-step">
+      <span class="step-number">02</span>
+      <h3>Discovery Review</h3>
+      <p>TechNerd reviews fit, urgency, scope, risk, access needs, and technical requirements.</p>
+    </article>
+
+    <article class="process-step">
+      <span class="step-number">03</span>
+      <h3>Consultation</h3>
+      <p>We discuss current systems, pain points, priorities, constraints, and possible paths forward.</p>
+    </article>
+
+    <article class="process-step">
+      <span class="step-number">04</span>
+      <h3>Proposal & Scope</h3>
+      <p>You receive a clear scope with deliverables, limits, timeline, pricing, and responsibilities.</p>
+    </article>
+
+    <article class="process-step">
+      <span class="step-number">05</span>
+      <h3>Engagement</h3>
+      <p>Work begins after the scope is accepted, with practical communication and clear expectations.</p>
+    </article>
+  </div>
 </section>
 
 <section class="section-block final-cta">
