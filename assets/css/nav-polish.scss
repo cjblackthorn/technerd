@@ -69,6 +69,95 @@ html {
   letter-spacing: 0.04em;
 }
 
+/* Viewport-based behavior, not user-agent behavior */
+@media (min-width: 1181px) {
+  .desktop-brand-text {
+    display: inline-block;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-header-brand,
+  .mobile-nav {
+    display: none;
+  }
+
+  .hero-content {
+    max-width: 78rem;
+  }
+
+  .hero h1 {
+    max-width: 13.5ch;
+    font-size: clamp(3.4rem, 5.4vw, 5.3rem);
+    line-height: 1.03;
+  }
+
+  .hero-lede {
+    max-width: 60rem;
+  }
+
+  .section-block h2,
+  .accent-panel h2,
+  .final-cta h2 {
+    max-width: 16ch;
+  }
+
+  .card-grid,
+  .process-grid {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+}
+
+/* Compact desktop / tablet: keep brand, switch nav links into menu */
+@media (min-width: 901px) and (max-width: 1180px) {
+  .nav-container {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .desktop-brand-text {
+    display: inline-block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-header-brand {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-dropdown {
+    position: absolute;
+    top: calc(100% + 0.65rem);
+    right: 0;
+    width: min(17rem, 42vw);
+    z-index: 2000;
+    animation: dropdownFade 180ms ease;
+  }
+
+  .hero-content {
+    max-width: 62rem;
+  }
+
+  .hero h1 {
+    max-width: 13ch;
+    font-size: clamp(3rem, 5.6vw, 4.7rem);
+    line-height: 1.04;
+  }
+
+  .section-block h2,
+  .accent-panel h2,
+  .final-cta h2 {
+    max-width: 15ch;
+  }
+}
+
 @media (hover: hover) {
   .button-primary:hover {
     box-shadow: 0 0 1.4rem rgba(103,232,249,0.22);
@@ -109,7 +198,13 @@ html {
     height: 3rem;
   }
 
+  .desktop-brand-text,
+  .desktop-nav {
+    display: none;
+  }
+
   .mobile-header-brand {
+    display: block;
     opacity: 0;
     pointer-events: none;
     transform: translateY(0.1rem);
@@ -119,6 +214,10 @@ html {
   .nav-container:has(.mobile-nav[open]) .mobile-header-brand {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .mobile-nav {
+    display: block;
   }
 
   .mobile-nav summary {
