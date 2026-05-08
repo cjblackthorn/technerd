@@ -4,7 +4,11 @@
       <span class="brand-mark">{TechNerd}</span>
     </a>
 
-    <nav aria-label="Primary navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      Menu
+    </button>
+
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
       <ul class="nav-links">
         <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
         <li><a href="{{ '/accessibility/' | relative_url }}">Accessibility</a></li>
