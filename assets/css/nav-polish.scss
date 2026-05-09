@@ -365,17 +365,52 @@ html {
   .process-step:hover,
   .trust-item:hover,
   .trust-grid div:hover {
-    border-color: rgba(103,232,249,0.28);
+    border-color: rgba(103,232,249,0.42);
+    background-color: rgba(15, 30, 49, 0.92);
     transform: translateY(-3px);
     box-shadow:
-      0.65rem 0.65rem 1.35rem rgba(103,232,249,0.18),
-      0 0.9rem 2.2rem rgba(0, 0, 0, 0.18);
+      0.85rem 0.85rem 1.8rem rgba(103,232,249,0.34),
+      0.28rem 0.28rem 0 rgba(103,232,249,0.42),
+      0 1.1rem 2.4rem rgba(0,0,0,0.22);
+  }
+
+  .card:hover::before,
+  .process-step:hover::before,
+  .trust-item:hover::before,
+  .trust-grid div:hover::before {
+    opacity: 1;
   }
 
   .brand-node:hover {
     transform: scale(1.04);
     filter: drop-shadow(0 0 0.5rem rgba(103,232,249,0.28));
   }
+}
+
+.card,
+.process-step,
+.trust-item,
+.trust-grid div {
+  position: relative;
+  overflow: visible;
+}
+
+.card::before,
+.process-step::before,
+.trust-item::before,
+.trust-grid div::before {
+  content: "";
+  position: absolute;
+  inset: auto -0.28rem -0.28rem auto;
+  width: 72%;
+  height: 72%;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(135deg, transparent 45%, rgba(103,232,249,0.42));
+  filter: blur(0.65rem);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 220ms ease;
 }
 
 @media (max-width: 900px) {
