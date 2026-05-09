@@ -365,9 +365,11 @@ html {
   .process-step:hover,
   .trust-item:hover,
   .trust-grid div:hover {
-    border-color: rgba(103,232,249,0.2);
+    border-color: rgba(103,232,249,0.28);
     transform: translateY(-3px);
-    box-shadow: 0 0.9rem 2.2rem rgba(0, 0, 0, 0.16);
+    box-shadow:
+      0.65rem 0.65rem 1.35rem rgba(103,232,249,0.18),
+      0 0.9rem 2.2rem rgba(0, 0, 0, 0.18);
   }
 
   .brand-node:hover {
