@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FAQ
+description: Common questions about TechNerd Consulting services, scope, remote work, and service boundaries.
 ---
 
 # Frequently Asked Questions
@@ -20,3 +21,5 @@ No technology system can be guaranteed completely secure or fully compliant in a
 ## Is remote consulting available?
 
 Yes. Many services can be provided remotely depending on scope and technical requirements.
+
+{% include page-cta.html %}

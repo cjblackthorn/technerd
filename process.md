@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Process
+description: The TechNerd Consulting workflow for request review, discovery, consultation, scope, and engagement.
 ---
 
 # Process
@@ -26,3 +27,5 @@ Definition of deliverables, limitations, timelines, responsibilities, and pricin
 ## Engagement
 
 Implementation, consulting, support, or advisory work begins after scope and expectations are agreed upon.
+
+{% include page-cta.html %}

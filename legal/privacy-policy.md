@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Privacy Policy
+description: Privacy expectations for communication, consultation requests, scheduling, and project coordination.
 ---
 
 # Privacy Policy

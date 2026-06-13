@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Terms
+description: General expectations and limits for TechNerd Consulting website use and consulting requests.
 ---
 
 # Terms

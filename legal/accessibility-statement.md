@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accessibility Statement
+description: TechNerd Consulting's accessibility goals, ongoing improvement approach, and feedback contact.
 ---
 
 # Accessibility Statement
@@ -19,4 +20,4 @@ Accessibility is an ongoing process. As the site develops, TechNerd Consulting w
 
 If you experience an accessibility barrier on this site, please contact TechNerd Consulting by email:
 
-technerdconsultingllc@gmail.com
+[technerdconsultingllc@gmail.com](mailto:technerdconsultingllc@gmail.com)

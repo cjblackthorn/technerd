@@ -1,5 +1,6 @@
 <header class="site-header">
   <div class="container nav-container">
+    {% assign current_url = page.url %}
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="TechNerd Consulting home">
       <img class="brand-node" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" aria-hidden="true">
       <span class="desktop-brand-text">{TechNerd}</span>
@@ -9,15 +10,15 @@
 
     <nav class="desktop-nav" aria-label="Primary navigation">
       <ul class="nav-links">
-        <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
-        <li><a href="{{ '/accessibility/' | relative_url }}">Accessibility</a></li>
-        <li><a href="{{ '/resources/' | relative_url }}">Resources</a></li>
-        <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-        <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/services/' | relative_url }}"{% if current_url == '/services/' %} aria-current="page"{% endif %}>Services</a></li>
+        <li><a href="{{ '/accessibility/' | relative_url }}"{% if current_url == '/accessibility/' %} aria-current="page"{% endif %}>Accessibility</a></li>
+        <li><a href="{{ '/resources/' | relative_url }}"{% if current_url == '/resources/' %} aria-current="page"{% endif %}>Resources</a></li>
+        <li><a href="{{ '/process/' | relative_url }}"{% if current_url == '/process/' %} aria-current="page"{% endif %}>Process</a></li>
+        <li><a href="{{ '/about/' | relative_url }}"{% if current_url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
+        <li><a href="{{ '/faq/' | relative_url }}"{% if current_url == '/faq/' %} aria-current="page"{% endif %}>FAQ</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}"{% if current_url == '/contact/' %} aria-current="page"{% endif %}>Contact</a></li>
         <li>
-          <a class="button button-primary nav-cta" href="{{ '/request-consultation/' | relative_url }}">
+          <a class="button button-primary nav-cta" href="{{ '/request-consultation/' | relative_url }}"{% if current_url == '/request-consultation/' %} aria-current="page"{% endif %}>
             Request Consultation
           </a>
         </li>
@@ -28,15 +29,15 @@
       <summary>Menu</summary>
       <nav aria-label="Mobile navigation" class="mobile-dropdown">
         <ul class="mobile-nav-links">
-          <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
-          <li><a href="{{ '/accessibility/' | relative_url }}">Accessibility</a></li>
-          <li><a href="{{ '/resources/' | relative_url }}">Resources</a></li>
-          <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
-          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-          <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
-          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          <li><a href="{{ '/services/' | relative_url }}"{% if current_url == '/services/' %} aria-current="page"{% endif %}>Services</a></li>
+          <li><a href="{{ '/accessibility/' | relative_url }}"{% if current_url == '/accessibility/' %} aria-current="page"{% endif %}>Accessibility</a></li>
+          <li><a href="{{ '/resources/' | relative_url }}"{% if current_url == '/resources/' %} aria-current="page"{% endif %}>Resources</a></li>
+          <li><a href="{{ '/process/' | relative_url }}"{% if current_url == '/process/' %} aria-current="page"{% endif %}>Process</a></li>
+          <li><a href="{{ '/about/' | relative_url }}"{% if current_url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
+          <li><a href="{{ '/faq/' | relative_url }}"{% if current_url == '/faq/' %} aria-current="page"{% endif %}>FAQ</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}"{% if current_url == '/contact/' %} aria-current="page"{% endif %}>Contact</a></li>
           <li>
-            <a class="button button-primary nav-cta" href="{{ '/request-consultation/' | relative_url }}">
+            <a class="button button-primary nav-cta" href="{{ '/request-consultation/' | relative_url }}"{% if current_url == '/request-consultation/' %} aria-current="page"{% endif %}>
               Request Consultation
             </a>
           </li>

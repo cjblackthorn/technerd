@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accessibility
+description: Accessibility-aware technology consulting for usable, sustainable systems and workflows.
 ---
 
 # Accessibility
@@ -25,3 +26,5 @@ TechNerd Consulting believes accessible systems are better systems. Accessibilit
 ## Commitment
 
 TechNerd Consulting aims to support accessible, usable, and human-centered technology experiences wherever reasonably possible.
+
+{% include page-cta.html %}

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Request Consultation
+description: Request a TechNerd Consulting consultation with project goals, accessibility needs, timeline, and scope context.
 ---
 
 # Request Consultation
@@ -33,4 +34,4 @@ Requests are reviewed to assess:
 
 Questions or consultation requests can be sent to:
 
-**technerdconsultingllc@gmail.com**
+**[technerdconsultingllc@gmail.com](mailto:technerdconsultingllc@gmail.com)**

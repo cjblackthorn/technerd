@@ -1,6 +1,7 @@
 ---
 layout: default
 title: What We Do Not Provide
+description: Clear service boundaries for TechNerd Consulting, including emergency response, compliance, and guarantee limitations.
 ---
 
 # What We Do Not Provide
@@ -21,3 +22,5 @@ Clear scope boundaries help improve communication, reduce confusion, and support
 ## Scope Philosophy
 
 TechNerd Consulting focuses on practical consulting, guidance, workflow improvement, accessibility awareness, and sustainable systems support.
+
+{% include page-cta.html %}

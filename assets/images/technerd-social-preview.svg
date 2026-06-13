@@ -9,21 +9,23 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
 
   <circle cx="920" cy="160" r="120" fill="#67e8f9" opacity="0.08"/>
-  <circle cx="1040" cy="280" r="200" fill="#7dd3fc" opacity="0.05"/>
+  <circle cx="1050" cy="280" r="200" fill="#7dd3fc" opacity="0.05"/>
 
-  <text x="120" y="240" fill="#67e8f9" font-size="28" font-family="Arial, sans-serif" letter-spacing="4">
+  <text x="120" y="205" fill="#67e8f9" font-size="27" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3.2">
     IT • CYBERSECURITY • ACCESSIBILITY • SYSTEMS
   </text>
 
-  <text x="120" y="340" fill="#f3f4f6" font-size="72" font-weight="700" font-family="Arial, sans-serif">
+  <text x="120" y="320" fill="#f3f4f6" font-size="76" font-weight="700" font-family="Arial, sans-serif">
     TechNerd Consulting
   </text>
 
-  <text x="120" y="420" fill="#d1d5db" font-size="34" font-family="Arial, sans-serif">
+  <text x="120" y="408" fill="#d1d5db" font-size="34" font-family="Arial, sans-serif">
     Human-centered technology systems.
   </text>
 
-  <text x="120" y="470" fill="#d1d5db" font-size="34" font-family="Arial, sans-serif">
+  <text x="120" y="458" fill="#d1d5db" font-size="34" font-family="Arial, sans-serif">
     Accessible. Secure. Sustainable.
   </text>
+
+  <line x1="120" y1="501" x2="1080" y2="501" stroke="#67e8f9" stroke-opacity="0.1" stroke-width="2"/>
 </svg>

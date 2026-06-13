@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Supported Technologies
+description: Common technology areas TechNerd Consulting can support across accounts, devices, backups, accessibility, and workflows.
 ---
 
 # Supported Technologies
@@ -22,3 +23,5 @@ TechNerd Consulting focuses on practical technology systems used by individuals,
 ## Platform Notes
 
 Supported tools and platforms may vary by project scope, access, budget, and technical requirements.
+
+{% include page-cta.html %}

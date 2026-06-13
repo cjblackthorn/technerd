@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cjblackthorn.github.io/technerd/sitemap.xml
+Sitemap: https://technerd.tech/sitemap.xml

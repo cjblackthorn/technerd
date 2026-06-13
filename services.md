@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Services
+description: Practical IT, cybersecurity, accessibility, and systems consulting services from TechNerd Consulting.
 ---
 
 # Services
@@ -22,3 +23,5 @@ Digital and physical accessibility-aware consulting for technology environments,
 ## Systems & Operations
 
 Workflow optimization, process improvement, technical troubleshooting, and systems planning designed around real-world use.
+
+{% include page-cta.html %}

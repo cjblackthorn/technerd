@@ -176,6 +176,14 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
 
 <section class="section-block final-cta">
   <h2>Let’s build technology that works for you.</h2>
-  <p>Questions or consultation requests can be sent to technerdconsultingllc@gmail.com.</p>
-  <a class="button button-primary" href="mailto:technerdconsultingllc@gmail.com">Email TechNerd Consulting</a>
+  <p>Questions or consultation requests can be sent to <a href="mailto:technerdconsultingllc@gmail.com">technerdconsultingllc@gmail.com</a>.</p>
+  <div class="button-row">
+    <a class="button button-primary" href="{{ '/request-consultation/' | relative_url }}">Request Consultation</a>
+    <a class="button button-secondary" href="mailto:technerdconsultingllc@gmail.com">Email TechNerd</a>
+  </div>
+  <ul class="trust-notes" aria-label="Consultation notes">
+    <li>Remote consultation available</li>
+    <li>Limited requests currently open</li>
+    <li>Clear scope before work begins</li>
+  </ul>
 </section>

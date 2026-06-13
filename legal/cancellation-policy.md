@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Cancellation Policy
+description: Scheduling, cancellation, delay, and availability expectations for TechNerd Consulting work.
 ---
 
 # Cancellation Policy
