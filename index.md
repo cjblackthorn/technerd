@@ -146,6 +146,27 @@ description: Enterprise security experience. Practical solutions for organizatio
   </div>
 </section>
 
+<section class="section-block section-intro-left">
+  <p class="eyebrow">Frameworks & Resources</p>
+  <h2>Reusable tools for practical governance work.</h2>
+  <div class="card-grid">
+    {% for resource in site.resources_library limit:2 %}
+      <article class="card">
+        <p class="eyebrow">Resource</p>
+        <h3><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a></h3>
+        <p>{{ resource.description }}</p>
+      </article>
+    {% endfor %}
+    {% for framework in site.frameworks limit:1 %}
+      <article class="card">
+        <p class="eyebrow">Framework</p>
+        <h3><a href="{{ framework.url | relative_url }}">{{ framework.title }}</a></h3>
+        <p>{{ framework.summary }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="section-block final-cta">
   <h2>Let’s make security governance clearer.</h2>
   <p>Questions or consultation requests can be sent to <a href="mailto:technerdconsultingllc@gmail.com">technerdconsultingllc@gmail.com</a>.</p>

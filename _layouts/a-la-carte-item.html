@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="content-detail service-detail">
+  <p class="eyebrow">{{ page.category | default: "A La Carte Service" }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}
+    <p class="page-intro">{{ page.summary }}</p>
+  {% endif %}
+
+  <dl class="detail-list">
+    {% if page.delivery_format %}
+      <dt>Format</dt>
+      <dd>{{ page.delivery_format }}</dd>
+    {% endif %}
+    {% if page.estimated_duration %}
+      <dt>Estimated Duration</dt>
+      <dd>{{ page.estimated_duration }}</dd>
+    {% endif %}
+    {% if page.pricing_display %}
+      <dt>Pricing</dt>
+      <dd>{{ page.pricing_display }}</dd>
+    {% endif %}
+  </dl>
+
+  {{ content }}
+
+  {% if page.deliverables %}
+    <h2>Deliverables</h2>
+    <ul>
+      {% for item in page.deliverables %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% include related-links.html %}
+  {% include page-cta.html %}
+</article>

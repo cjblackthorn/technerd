@@ -21,4 +21,18 @@ TechNerd resources are practical, no-login tools designed to help organizations 
   {% endfor %}
 </div>
 
+## Frameworks
+
+TechNerd frameworks provide reusable models for recurring governance, identity, audit readiness, and security program problems.
+
+<div class="collection-grid">
+  {% for framework in site.frameworks %}
+    <article class="collection-card">
+      <p class="eyebrow">Framework</p>
+      <h2><a href="{{ framework.url | relative_url }}">{{ framework.title }}</a></h2>
+      <p>{{ framework.summary }}</p>
+    </article>
+  {% endfor %}
+</div>
+
 {% include page-cta.html %}

@@ -19,6 +19,9 @@ collections:
   packages:
     output: true
     permalink: /services/packages/:path/
+  a_la_carte:
+    output: true
+    permalink: /services/a-la-carte/:path/
   projects:
     output: true
     permalink: /projects/:path/
@@ -43,6 +46,11 @@ defaults:
       type: packages
     values:
       layout: package
+  - scope:
+      path: ""
+      type: a_la_carte
+    values:
+      layout: a-la-carte-item
   - scope:
       path: ""
       type: projects

@@ -24,6 +24,7 @@ Deliverables:
 - Data-driven navigation in `_data/navigation.yml`
 - Reusable collection layouts
 - Initial MVP content entries for services, packages, projects, insights, and resources
+- Reusable a la carte item architecture and initial framework content
 
 ## Phase 2: Core Public Restructure
 
@@ -66,6 +67,15 @@ MVP packages:
 - Security Foundations Assessment
 - Identity & Access Health Check
 - Audit Readiness Assessment
+
+MVP a la carte items:
+
+- Access Review Facilitation
+- Control Narrative Writing
+- Policy & Procedure Review
+- Executive Security Briefing
+- Vendor Security Review
+- Security Roadmap Session
 
 ## Phase 4: Proof Layer
 

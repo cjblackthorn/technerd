@@ -37,6 +37,20 @@ The service hierarchy is intentional: enterprise security and governance are the
   {% endfor %}
 </div>
 
+## A La Carte Services
+
+Focused services can stand alone or supplement packages and strategic engagements.
+
+<div class="collection-grid">
+  {% for item in site.a_la_carte limit:6 %}
+    <article class="collection-card">
+      <p class="eyebrow">{{ item.category }}</p>
+      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      <p>{{ item.summary }}</p>
+    </article>
+  {% endfor %}
+</div>
+
 ## How Services Are Scoped
 
 Most work starts with discovery. Pricing and deliverables depend on scope, urgency, system access, technical complexity, risk, stakeholders, and the level of documentation or implementation needed.

@@ -20,3 +20,21 @@ deliverables:
 A la carte services are designed for targeted needs. They can be scoped hourly, as a workshop, per document, per review, or as a small fixed-fee engagement depending on the work.
 
 Examples include security policy review, access review design, evidence package preparation, risk register review, security metrics development, vendor review, cloud governance review, and technical writing.
+
+## Current A La Carte Catalog
+
+<div class="collection-grid">
+  {% for item in site.a_la_carte %}
+    <article class="collection-card">
+      <p class="eyebrow">{{ item.category }}</p>
+      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      <p>{{ item.summary }}</p>
+      {% if item.delivery_format %}
+        <p><strong>Format:</strong> {{ item.delivery_format }}</p>
+      {% endif %}
+      {% if item.pricing_display %}
+        <p><strong>Pricing:</strong> {{ item.pricing_display }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
