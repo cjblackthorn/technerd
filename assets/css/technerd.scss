@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background: linear-gradient(180deg, #081225 0%, #0f172a 100%);
@@ -32,12 +37,13 @@ body {
 
 .skip-link {
   position: absolute;
-  left: -9999px;
+  left: 1rem;
+  top: 1rem;
+  transform: translateY(-200%);
 }
 
 .skip-link:focus {
-  left: 1rem;
-  top: 1rem;
+  transform: translateY(0);
   z-index: 2000;
 }
 

@@ -1,16 +1,16 @@
 ---
 layout: default
 title: TechNerd Consulting
-description: Human-centered IT, cybersecurity, accessibility, and systems consulting.
+description: Practical security, identity, access, recovery, accessibility, and systems consulting.
 ---
 
 <section class="hero hero-split">
   <div class="hero-content">
     <div class="hero-logo" aria-label="TechNerd Consulting">{TechNerd}</div>
-    <p class="eyebrow hero-eyebrow">IT • Cybersecurity • Accessibility • Systems</p>
-    <h1>Technology should work for people, not against them.</h1>
+    <p class="eyebrow hero-eyebrow">Security • Identity • Systems • Support</p>
+    <h1>Practical security and systems support for real-world technology.</h1>
     <p class="hero-lede">
-      Human-centered technology consulting for real-world systems, accessibility needs, security concerns, and operational friction.
+      TechNerd Consulting brings 20+ years of IT, security, access governance, automation, documentation, recovery, and support experience to technology that needs to be secure, usable, and maintainable.
     </p>
 
     <div class="availability-banner">
@@ -26,53 +26,63 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
 
 <section class="trust-strip" aria-label="Consulting experience and focus areas">
   <div class="trust-item">
-    <span>Operational IT</span>
-    <p>Infrastructure, troubleshooting, support, and workflow reality.</p>
+    <span>Identity & Access</span>
+    <p>Account cleanup, access reviews, lifecycle friction, and least-privilege guidance.</p>
   </div>
   <div class="trust-item">
-    <span>Security-Minded</span>
-    <p>Practical privacy, account, device, and risk reduction guidance.</p>
+    <span>Security Recovery</span>
+    <p>Practical hardening, account recovery, endpoint recovery, and continuity planning.</p>
   </div>
   <div class="trust-item">
-    <span>Accessibility-Aware</span>
-    <p>Technology decisions shaped around usability and real human needs.</p>
+    <span>Documentation & Automation</span>
+    <p>Clear procedures, repeatable reporting, and workflow cleanup.</p>
   </div>
 </section>
 
 <section class="section-block section-intro-left">
   <p class="eyebrow">Core Services</p>
-  <h2>Secure, accessible, human-centered systems.</h2>
+  <h2>Security, identity, support, and documentation that hold up in real life.</h2>
   <p class="section-lede">
     TechNerd helps people and organizations untangle technology that has become confusing, fragile, inaccessible, insecure, or harder to maintain than it should be.
   </p>
   <div class="card-grid service-grid">
     <article class="card service-card service-it">
-      <h3>IT & Infrastructure</h3>
-      <p>Practical technology setup, troubleshooting, and infrastructure guidance for real-world environments.</p>
+      <h3>Account, Identity & Access Cleanup</h3>
+      <p>Access reviews, admin account hygiene, identity lifecycle gaps, and practical least-privilege cleanup.</p>
     </article>
 
     <article class="card service-card service-security">
-      <h3>Cybersecurity & Information Security</h3>
-      <p>Security-minded guidance for accounts, devices, workflows, privacy practices, and physical or digital hardening.</p>
+      <h3>Security Recovery & Hardening</h3>
+      <p>Post-disruption cleanup planning, account recovery, endpoint recovery guidance, backup checks, and practical hardening.</p>
     </article>
 
     <article class="card service-card service-accessibility">
-      <h3>Accessibility & Usability</h3>
-      <p>Digital and physical accessibility-aware consulting for tools, workflows, websites, and adaptive setups.</p>
+      <h3>Small Business Systems Support</h3>
+      <p>Devices, accounts, cloud tools, networking basics, backups, troubleshooting, and sustainable support practices.</p>
     </article>
 
     <article class="card service-card service-systems">
-      <h3>Systems & Operations</h3>
-      <p>Workflow optimization, process improvement, technical troubleshooting, and sustainable operational planning.</p>
+      <h3>Audit, Governance & Documentation</h3>
+      <p>Evidence organization, process documentation, control-informed cleanup, remediation tracking, and clearer handoffs.</p>
+    </article>
+
+    <article class="card service-card service-it">
+      <h3>Automation, Reporting & Workflow Cleanup</h3>
+      <p>PowerShell, SQL, spreadsheet-based reporting, repeatable checklists, and operational workflow cleanup.</p>
+    </article>
+
+    <article class="card service-card service-accessibility">
+      <h3>Accessibility-Aware Technology Support</h3>
+      <p>Usable workflows, adaptive setups, plain-language documentation, and technology choices shaped around real people.</p>
     </article>
   </div>
 </section>
 
 <section class="section-block accent-panel human-panel">
   <p class="eyebrow">Approach</p>
-  <h2>Accessible systems are better systems.</h2>
+  <h2>Usable security is better security.</h2>
   <p>
-    Accessibility is not an afterthought. It is part of building technology that is usable, maintainable, secure, and sustainable for the people who rely on it.
+    Security, accessibility, and operations are connected. A control that people cannot understand or maintain will fail in the real world, even if it looks good on paper.
   </p>
   <p>
     Good systems reduce friction. They make the next step clearer, safer, and easier to sustain.
@@ -81,15 +91,15 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
 
 <section class="section-block credibility-panel">
   <p class="eyebrow">Why TechNerd</p>
-  <h2>Built from real operational experience.</h2>
+  <h2>Built from the full support chain.</h2>
   <p class="section-lede">
-    TechNerd combines infrastructure support, cybersecurity thinking, accessibility awareness, and systems troubleshooting into practical consulting that respects both the technology and the people using it.
+    TechNerd is shaped by 20+ years across enterprise support, endpoint recovery, regulated access administration, security operations, IAM engineering, audit readiness, automation, documentation, and independent consulting.
   </p>
   <div class="trust-grid">
-    <div>IT infrastructure and support</div>
-    <div>Identity, access, and security-minded workflows</div>
-    <div>Physical and digital accessibility considerations</div>
-    <div>Clear communication, documentation, and sustainable scope</div>
+    <div>Enterprise support through IAM and GRC</div>
+    <div>Active Directory, Entra ID, SailPoint, ServiceNow, and PowerShell</div>
+    <div>Security recovery, hardening, and continuity thinking</div>
+    <div>Clear documentation, training, and human-centered support</div>
   </div>
 </section>
 
@@ -99,18 +109,18 @@ description: Human-centered IT, cybersecurity, accessibility, and systems consul
 
   <div class="card-grid">
     <article class="card">
-      <h3>Small Businesses</h3>
-      <p>Organizations needing practical, sustainable technology support without enterprise-level complexity.</p>
+      <h3>Small Businesses & Solo Operators</h3>
+      <p>Teams that need practical, sustainable technology support without enterprise-level overhead.</p>
     </article>
 
     <article class="card">
-      <h3>Accessibility-Conscious Teams</h3>
-      <p>Groups looking to improve usability, accessibility, workflows, and inclusive technology practices.</p>
+      <h3>Teams With Access Risk</h3>
+      <p>Organizations with messy accounts, unclear permissions, stale access, audit findings, or identity lifecycle gaps.</p>
     </article>
 
     <article class="card">
-      <h3>Overwhelmed Operators</h3>
-      <p>People trying to untangle confusing systems, workflows, devices, accounts, and operational friction.</p>
+      <h3>People Recovering From Disruption</h3>
+      <p>Clients trying to regain control after account problems, endpoint issues, security scares, or operational friction.</p>
     </article>
   </div>
 </section>
