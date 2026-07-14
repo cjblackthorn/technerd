@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="content-detail insight-detail">
+  <p class="eyebrow">{{ page.category | default: "Insight" }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}
+    <p class="page-intro">{{ page.summary }}</p>
+  {% endif %}
+
+  <p class="detail-meta">
+    {% if page.date %}Published {{ page.date | date: "%B %-d, %Y" }}{% endif %}
+    {% if page.reading_time %} · {{ page.reading_time }}{% endif %}
+  </p>
+
+  {{ content }}
+
+  {% include related-links.html %}
+  {% include page-cta.html %}
+</article>

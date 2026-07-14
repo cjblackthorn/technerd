@@ -1,0 +1,55 @@
+{% assign has_related = false %}
+{% if page.related_services or page.related_projects or page.related_insights or page.related_resources or page.related_packages %}
+  {% assign has_related = true %}
+{% endif %}
+
+{% if has_related %}
+<section class="related-links" aria-labelledby="related-content-heading">
+  <h2 id="related-content-heading">Related Content</h2>
+
+  {% if page.related_services %}
+    <h3>Services</h3>
+    <ul>
+      {% for item in page.related_services %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.related_packages %}
+    <h3>Packages</h3>
+    <ul>
+      {% for item in page.related_packages %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.related_projects %}
+    <h3>Projects</h3>
+    <ul>
+      {% for item in page.related_projects %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.related_insights %}
+    <h3>Insights</h3>
+    <ul>
+      {% for item in page.related_insights %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.related_resources %}
+    <h3>Resources</h3>
+    <ul>
+      {% for item in page.related_resources %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</section>
+{% endif %}

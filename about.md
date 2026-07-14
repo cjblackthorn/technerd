@@ -1,28 +1,34 @@
 ---
 layout: default
 title: About
-description: Learn about TechNerd Consulting's practical approach to security, identity, access, recovery, accessibility, and systems operations.
+description: Learn about TechNerd Consulting's enterprise-informed cybersecurity governance, identity, audit readiness, and practical security approach.
 ---
 
 # About TechNerd Consulting
 
-TechNerd Consulting is shaped by more than 20 years of practical technology work across enterprise support, security-focused escalation, regulated access administration, IAM engineering, audit readiness, automation, documentation, and independent consulting.
+TechNerd Consulting is an enterprise-informed cybersecurity and governance practice focused on identity governance, IAM, security controls, audit readiness, cloud governance, remediation, documentation, and practical risk reduction.
 
-That background matters because most technology problems are not just tool problems. They are workflow problems, access problems, documentation problems, recovery problems, usability problems, and trust problems tangled together.
+The practice is shaped by more than 20 years of technology work across enterprise support, security-focused escalation, regulated access administration, IAM engineering, audit readiness, automation, documentation, and independent consulting.
+
+## What TechNerd Bridges
+
+- technical implementation and governance
+- security operations and audit
+- identity engineering and risk management
+- enterprise practices and practical smaller-organization needs
+- technical findings and business decision-making
 
 ## Areas of Focus
 
-- account, identity, and access cleanup
-- security recovery and practical hardening
-- small business systems support
-- audit, governance, and documentation support
-- automation, reporting, and workflow cleanup
-- accessibility-aware technology consulting
+- governance, risk, and compliance
+- identity governance and administration
+- audit readiness and evidence quality
+- security program development
+- cloud governance and ownership
+- right-sized security for small businesses and nonprofits
 
-## What That Means for Clients
+## Working Style
 
-TechNerd Consulting brings the perspective of someone who has worked the full support chain: user support, endpoint recovery, access administration, enterprise IAM, governance, reporting, documentation, and stakeholder communication.
-
-The goal is to help people build systems that are secure, accessible, sustainable, and practical for real-world use.
+TechNerd is calm, evidence-driven, practical, human-centered, accessible, and direct. The goal is to help organizations understand what matters, what to improve first, and how to sustain security practices after the engagement ends.
 
 {% include page-cta.html %}

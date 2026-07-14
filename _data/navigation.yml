@@ -1,0 +1,14 @@
+- label: Home
+  url: /
+- label: About
+  url: /about/
+- label: Services
+  url: /services/
+- label: Insights
+  url: /insights/
+- label: Projects
+  url: /projects/
+- label: Resources
+  url: /resources/
+- label: Contact
+  url: /contact/

@@ -1,5 +1,5 @@
 title: TechNerd Consulting
-description: Human-centered IT, cybersecurity, accessibility, and systems consulting.
+description: Enterprise-informed cybersecurity governance, identity, risk, audit readiness, and practical security consulting.
 author: C. J. Blackthorn
 email: technerdconsultingllc@gmail.com
 url: "https://technerd.tech"
@@ -11,6 +11,58 @@ permalink: pretty
 sass:
   sass_dir: assets/css
   style: compressed
+
+collections:
+  services:
+    output: true
+    permalink: /services/:path/
+  packages:
+    output: true
+    permalink: /services/packages/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+  insights:
+    output: true
+    permalink: /insights/:path/
+  resources_library:
+    output: true
+    permalink: /resources/:path/
+  frameworks:
+    output: true
+    permalink: /frameworks/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: services
+    values:
+      layout: service
+  - scope:
+      path: ""
+      type: packages
+    values:
+      layout: package
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: insights
+    values:
+      layout: insight
+  - scope:
+      path: ""
+      type: resources_library
+    values:
+      layout: resource
+  - scope:
+      path: ""
+      type: frameworks
+    values:
+      layout: framework
 
 exclude:
   - README.md

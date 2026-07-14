@@ -460,6 +460,82 @@ summary:focus-visible,
   font-size: 1.05rem;
 }
 
+.card a,
+.collection-card a {
+  color: var(--text-primary);
+  text-decoration-color: rgba(103,232,249,0.4);
+  text-underline-offset: 0.18em;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.collection-card,
+.related-links {
+  padding: 1.6rem;
+  border: 1px solid rgba(103,232,249,0.14);
+  border-radius: var(--radius-lg);
+  background: rgba(15,23,42,0.78);
+}
+
+.collection-card h2,
+.collection-card h3 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  line-height: 1.2;
+}
+
+.collection-card p,
+.detail-meta,
+.detail-list dd,
+.related-links li {
+  color: var(--text-secondary);
+}
+
+.detail-list {
+  display: grid;
+  grid-template-columns: minmax(8rem, auto) 1fr;
+  gap: 0.6rem 1.25rem;
+  margin: 2rem 0;
+  padding: 1.4rem;
+  border: 1px solid rgba(103,232,249,0.12);
+  border-radius: var(--radius-lg);
+  background: rgba(15,23,42,0.58);
+}
+
+.detail-list dt {
+  color: var(--accent-primary);
+  font-weight: 800;
+}
+
+.detail-list dd {
+  margin: 0;
+}
+
+.related-links {
+  margin-top: 3rem;
+}
+
+.related-links h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.related-links h3 {
+  margin-top: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.related-links ul {
+  margin-bottom: 0;
+}
+
 .step-number {
   display: inline-block;
   margin-bottom: 1rem;

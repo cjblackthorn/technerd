@@ -2,7 +2,7 @@
   <div class="container footer-brand">
     <h2>TechNerd Consulting</h2>
     <p>
-      Human-centered IT, cybersecurity, accessibility, and systems consulting.
+      Enterprise-informed cybersecurity governance, identity, risk, audit readiness, and practical security consulting.
     </p>
     <a class="button button-primary footer-cta" href="{{ '/request-consultation/' | relative_url }}">Request Consultation</a>
   </div>
@@ -11,11 +11,9 @@
     <div>
       <h3>Navigation</h3>
       <ul>
-        <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
-        <li><a href="{{ '/accessibility/' | relative_url }}">Accessibility</a></li>
-        <li><a href="{{ '/resources/' | relative_url }}">Resources</a></li>
-        <li><a href="{{ '/process/' | relative_url }}">Process</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        {% for item in site.data.navigation %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.label }}</a></li>
+        {% endfor %}
       </ul>
     </div>
 

@@ -1,0 +1,20 @@
+- title: Enterprise Security & Governance
+  url: /services/enterprise-security-governance/
+  summary: Governance, risk, controls, identity, audit readiness, cloud governance, and remediation support for complex environments.
+  priority: primary
+- title: Strategic Advisory
+  url: /services/strategic-advisory/
+  summary: Security leadership, IAM strategy, governance workshops, program reviews, and roadmap development.
+  priority: primary
+- title: Small Business & Nonprofit Security
+  url: /services/small-business-nonprofit-security/
+  summary: Right-sized security reviews, identity guidance, policy support, and practical technology governance for smaller organizations.
+  priority: secondary
+- title: Service Packages
+  url: /services/packages/
+  summary: Fixed-scope and semi-standardized engagements with clear deliverables, timelines, and pricing display options.
+  priority: supporting
+- title: A La Carte Services
+  url: /services/a-la-carte/
+  summary: Focused workshops, reviews, documentation, control support, and advisory sessions.
+  priority: supporting

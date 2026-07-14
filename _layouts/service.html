@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<article class="content-detail service-detail">
+  <p class="eyebrow">{{ page.category | default: "Service" }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}
+    <p class="page-intro">{{ page.summary }}</p>
+  {% endif %}
+
+  {% if page.audience %}
+    <p class="detail-meta"><strong>Audience:</strong> {{ page.audience }}</p>
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.problems %}
+    <h2>Problems Addressed</h2>
+    <ul>
+      {% for item in page.problems %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.deliverables %}
+    <h2>Typical Deliverables</h2>
+    <ul>
+      {% for item in page.deliverables %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% include related-links.html %}
+  {% include page-cta.html %}
+</article>

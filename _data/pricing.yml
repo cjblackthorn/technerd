@@ -1,0 +1,12 @@
+display_pricing: true
+default_mode: quote
+modes:
+  quote: Contact for pricing
+  custom: Custom proposal
+  starting_at: Starting at
+  range: Typical range
+  hourly: Hourly
+  half_day: Half-day
+  full_day: Full-day
+notes:
+  nonprofit: Reduced nonprofit rates may be available when scope and availability allow.

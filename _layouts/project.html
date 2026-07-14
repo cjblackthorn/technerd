@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="content-detail project-detail">
+  <p class="eyebrow">{{ page.classification | default: "Project" }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}
+    <p class="page-intro">{{ page.summary }}</p>
+  {% endif %}
+
+  <dl class="detail-list">
+    {% if page.environment %}
+      <dt>Environment</dt>
+      <dd>{{ page.environment }}</dd>
+    {% endif %}
+    {% if page.role %}
+      <dt>Role</dt>
+      <dd>{{ page.role }}</dd>
+    {% endif %}
+  </dl>
+
+  {{ content }}
+
+  {% if page.governance_impact %}
+    <h2>Governance Impact</h2>
+    <ul>
+      {% for item in page.governance_impact %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.deliverables %}
+    <h2>Deliverables</h2>
+    <ul>
+      {% for item in page.deliverables %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% include related-links.html %}
+  {% include page-cta.html %}
+</article>

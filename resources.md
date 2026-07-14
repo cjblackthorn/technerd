@@ -1,29 +1,24 @@
 ---
 layout: default
 title: Resources
-description: Practical technology resources planned for security, accessibility, backups, accounts, and operational organization.
+description: Practical TechNerd resources for access reviews, audit readiness, identity governance, and security planning.
 ---
 
 # Resources
 
-Practical technology guidance, accessibility-aware recommendations, and security-minded educational resources.
+TechNerd resources are practical, no-login tools designed to help organizations think more clearly about security governance, identity, audit readiness, and risk.
 
-## Planned Resource Areas
-
-- password manager guidance
-- multi-factor authentication setup
-- phishing awareness
-- secure backup basics
-- accessibility-aware workflows
-- adaptive technology recommendations
-- small business security basics
-- account recovery planning
-- documentation and operational organization
-
-## Philosophy
-
-Technology guidance should be practical, understandable, sustainable, and human-centered.
-
-Resources and educational materials will expand over time as the TechNerd platform develops.
+<div class="collection-grid">
+  {% for resource in site.resources_library %}
+    <article class="collection-card">
+      <p class="eyebrow">{{ resource.audience }}</p>
+      <h2><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a></h2>
+      <p>{{ resource.description }}</p>
+      {% if resource.updated %}
+        <p><strong>Updated:</strong> {{ resource.updated | date: "%B %-d, %Y" }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
 
 {% include page-cta.html %}

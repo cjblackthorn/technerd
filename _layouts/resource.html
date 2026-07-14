@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="content-detail resource-detail">
+  <p class="eyebrow">{{ page.audience | default: "Resource" }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}
+    <p class="page-intro">{{ page.description }}</p>
+  {% endif %}
+
+  <dl class="detail-list">
+    {% if page.version %}
+      <dt>Version</dt>
+      <dd>{{ page.version }}</dd>
+    {% endif %}
+    {% if page.updated %}
+      <dt>Updated</dt>
+      <dd>{{ page.updated | date: "%B %-d, %Y" }}</dd>
+    {% endif %}
+  </dl>
+
+  {{ content }}
+
+  {% if page.usage_note %}
+    <h2>Usage Note</h2>
+    <p>{{ page.usage_note }}</p>
+  {% endif %}
+
+  {% include related-links.html %}
+  {% include page-cta.html %}
+</article>

@@ -1,45 +1,46 @@
 ---
 layout: default
 title: Services
-description: Practical security, identity, recovery, accessibility, automation, documentation, and systems consulting services from TechNerd Consulting.
+description: Cybersecurity governance, identity governance, audit readiness, strategic advisory, and right-sized security services from TechNerd Consulting.
 ---
 
 # Services
 
-TechNerd Consulting provides practical technology support across security, identity and access, recovery, accessibility, automation, documentation, and systems operations.
+TechNerd Consulting provides enterprise-informed cybersecurity governance, identity, risk, audit readiness, and practical security consulting.
 
-## Account, Identity & Access Cleanup
+The service hierarchy is intentional: enterprise security and governance are the primary body of work; small-business and nonprofit services are a right-sized secondary path informed by that enterprise experience.
 
-Access reviews, account hygiene, admin account review, multi-factor authentication guidance, password manager guidance, role and permission cleanup, lifecycle process review, and identity documentation.
+## Service Paths
 
-This work can include Active Directory, Microsoft Entra ID, SailPoint IdentityIQ, ServiceNow, Workday, and related access governance workflows when the project scope and access allow.
+<div class="collection-grid">
+  {% for item in site.data.service_groups %}
+    <article class="collection-card">
+      <p class="eyebrow">{{ item.priority }}</p>
+      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      <p>{{ item.summary }}</p>
+    </article>
+  {% endfor %}
+</div>
 
-## Security Recovery & Hardening
+## Initial Packages
 
-Practical guidance for account recovery, endpoint recovery, post-disruption cleanup planning, phishing-resistant habits, backup and recovery checks, privacy-aware workflows, and physical or digital hardening.
-
-TechNerd does not provide emergency incident response or 24/7 monitoring, but can help with structured recovery planning and sustainable risk reduction.
-
-## Small Business Systems Support
-
-Support for devices, accounts, cloud services, networking basics, backups, email, documentation, troubleshooting, and practical technology planning for small businesses, solo operators, and independent professionals.
-
-## Audit, Governance & Documentation
-
-Evidence organization, access and process documentation, control mapping, remediation tracking, handoff materials, knowledge transfer, and SOX, SOC, ISO, or NIST-informed cleanup.
-
-This is consulting and documentation support, not formal audit, legal, or certification work.
-
-## Automation, Reporting & Workflow Cleanup
-
-Repeatable reporting, spreadsheet cleanup, PowerShell and SQL-informed analysis, operational metrics, workflow triage, checklist design, and process improvement for teams that need cleaner ways to see and manage work.
-
-## Accessibility-Aware Technology Support
-
-Digital and physical accessibility-aware consulting for tools, workflows, websites, documentation, adaptive setups, and support processes that need to work for actual people in actual environments.
+<div class="collection-grid">
+  {% for package in site.packages %}
+    <article class="collection-card">
+      <p class="eyebrow">{{ package.audience }}</p>
+      <h2><a href="{{ package.url | relative_url }}">{{ package.title }}</a></h2>
+      <p>{{ package.summary }}</p>
+      {% if package.pricing_display %}
+        <p><strong>Pricing:</strong> {{ package.pricing_display }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
 
 ## How Services Are Scoped
 
-Most work starts with discovery. Pricing and deliverables depend on scope, urgency, system access, technical complexity, risk, and the level of documentation or implementation needed.
+Most work starts with discovery. Pricing and deliverables depend on scope, urgency, system access, technical complexity, risk, stakeholders, and the level of documentation or implementation needed.
+
+Strategic consulting is generally proposal-based. Packages can use fixed-scope, starting-at, range, or quote-based pricing without changing the page structure.
 
 {% include page-cta.html %}
