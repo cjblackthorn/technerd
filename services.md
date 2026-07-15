@@ -16,8 +16,9 @@ The service hierarchy is intentional: enterprise security and governance are the
   {% for item in site.data.service_groups %}
     <article class="collection-card">
       <p class="eyebrow">{{ item.priority }}</p>
-      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      <h2>{{ item.title }}</h2>
       <p>{{ item.summary }}</p>
+      <a class="card-action" href="{{ item.url | relative_url }}">Explore path</a>
     </article>
   {% endfor %}
 </div>
@@ -28,11 +29,12 @@ The service hierarchy is intentional: enterprise security and governance are the
   {% for package in site.packages %}
     <article class="collection-card">
       <p class="eyebrow">{{ package.audience }}</p>
-      <h2><a href="{{ package.url | relative_url }}">{{ package.title }}</a></h2>
+      <h2>{{ package.title }}</h2>
       <p>{{ package.summary }}</p>
       {% if package.pricing_display %}
         <p><strong>Pricing:</strong> {{ package.pricing_display }}</p>
       {% endif %}
+      <a class="card-action" href="{{ package.url | relative_url }}">View package</a>
     </article>
   {% endfor %}
 </div>
@@ -45,8 +47,9 @@ Focused services can stand alone or supplement packages and strategic engagement
   {% for item in site.a_la_carte limit:6 %}
     <article class="collection-card">
       <p class="eyebrow">{{ item.category }}</p>
-      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      <h2>{{ item.title }}</h2>
       <p>{{ item.summary }}</p>
+      <a class="card-action" href="{{ item.url | relative_url }}">View focused service</a>
     </article>
   {% endfor %}
 </div>

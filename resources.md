@@ -12,11 +12,12 @@ TechNerd resources are practical, no-login tools designed to help organizations 
   {% for resource in site.resources_library %}
     <article class="collection-card">
       <p class="eyebrow">{{ resource.audience }}</p>
-      <h2><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a></h2>
+      <h2>{{ resource.title }}</h2>
       <p>{{ resource.description }}</p>
       {% if resource.updated %}
         <p><strong>Updated:</strong> {{ resource.updated | date: "%B %-d, %Y" }}</p>
       {% endif %}
+      <a class="card-action" href="{{ resource.url | relative_url }}">Open resource</a>
     </article>
   {% endfor %}
 </div>
@@ -29,8 +30,9 @@ TechNerd frameworks provide reusable models for recurring governance, identity, 
   {% for framework in site.frameworks %}
     <article class="collection-card">
       <p class="eyebrow">Framework</p>
-      <h2><a href="{{ framework.url | relative_url }}">{{ framework.title }}</a></h2>
+      <h2>{{ framework.title }}</h2>
       <p>{{ framework.summary }}</p>
+      <a class="card-action" href="{{ framework.url | relative_url }}">Review framework</a>
     </article>
   {% endfor %}
 </div>

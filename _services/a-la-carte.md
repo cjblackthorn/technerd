@@ -27,7 +27,7 @@ Examples include security policy review, access review design, evidence package 
   {% for item in site.a_la_carte %}
     <article class="collection-card">
       <p class="eyebrow">{{ item.category }}</p>
-      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      <h2>{{ item.title }}</h2>
       <p>{{ item.summary }}</p>
       {% if item.delivery_format %}
         <p><strong>Format:</strong> {{ item.delivery_format }}</p>
@@ -35,6 +35,7 @@ Examples include security policy review, access review design, evidence package 
       {% if item.pricing_display %}
         <p><strong>Pricing:</strong> {{ item.pricing_display }}</p>
       {% endif %}
+      <a class="card-action" href="{{ item.url | relative_url }}">View focused service</a>
     </article>
   {% endfor %}
 </div>

@@ -12,8 +12,9 @@ Frameworks are TechNerd reference models that explain how to approach recurring 
   {% for framework in site.frameworks %}
     <article class="collection-card">
       <p class="eyebrow">Framework</p>
-      <h2><a href="{{ framework.url | relative_url }}">{{ framework.title }}</a></h2>
+      <h2>{{ framework.title }}</h2>
       <p>{{ framework.summary }}</p>
+      <a class="card-action" href="{{ framework.url | relative_url }}">Review framework</a>
     </article>
   {% endfor %}
 </div>

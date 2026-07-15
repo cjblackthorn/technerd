@@ -97,8 +97,10 @@ description: Enterprise security experience. Practical solutions for organizatio
   <div class="card-grid">
     {% for item in site.data.service_groups %}
       <article class="card">
-        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        <p class="card-meta-line">{{ item.priority | capitalize }} path</p>
+        <h3>{{ item.title }}</h3>
         <p>{{ item.summary }}</p>
+        <a class="card-action" href="{{ item.url | relative_url }}">Explore service path</a>
       </article>
     {% endfor %}
   </div>
@@ -125,8 +127,9 @@ description: Enterprise security experience. Practical solutions for organizatio
     {% for project in site.projects limit:3 %}
       <article class="card">
         <p class="eyebrow">{{ project.classification }}</p>
-        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        <h3>{{ project.title }}</h3>
         <p>{{ project.summary }}</p>
+        <a class="card-action" href="{{ project.url | relative_url }}">View case study</a>
       </article>
     {% endfor %}
   </div>
@@ -139,8 +142,9 @@ description: Enterprise security experience. Practical solutions for organizatio
     {% for insight in site.insights limit:3 %}
       <article class="card">
         <p class="eyebrow">{{ insight.category }}</p>
-        <h3><a href="{{ insight.url | relative_url }}">{{ insight.title }}</a></h3>
+        <h3>{{ insight.title }}</h3>
         <p>{{ insight.summary }}</p>
+        <a class="card-action" href="{{ insight.url | relative_url }}">Read insight</a>
       </article>
     {% endfor %}
   </div>
@@ -153,15 +157,17 @@ description: Enterprise security experience. Practical solutions for organizatio
     {% for resource in site.resources_library limit:2 %}
       <article class="card">
         <p class="eyebrow">Resource</p>
-        <h3><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a></h3>
+        <h3>{{ resource.title }}</h3>
         <p>{{ resource.description }}</p>
+        <a class="card-action" href="{{ resource.url | relative_url }}">Open resource</a>
       </article>
     {% endfor %}
     {% for framework in site.frameworks limit:1 %}
       <article class="card">
         <p class="eyebrow">Framework</p>
-        <h3><a href="{{ framework.url | relative_url }}">{{ framework.title }}</a></h3>
+        <h3>{{ framework.title }}</h3>
         <p>{{ framework.summary }}</p>
+        <a class="card-action" href="{{ framework.url | relative_url }}">Review framework</a>
       </article>
     {% endfor %}
   </div>

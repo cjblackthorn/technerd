@@ -12,11 +12,12 @@ Selected projects demonstrate substantial bodies of work through anonymized prof
   {% for project in site.projects %}
     <article class="collection-card">
       <p class="eyebrow">{{ project.classification }}</p>
-      <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+      <h2>{{ project.title }}</h2>
       <p>{{ project.summary }}</p>
       {% if project.environment %}
         <p><strong>Environment:</strong> {{ project.environment }}</p>
       {% endif %}
+      <a class="card-action" href="{{ project.url | relative_url }}">View case study</a>
     </article>
   {% endfor %}
 </div>

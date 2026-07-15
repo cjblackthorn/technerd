@@ -12,7 +12,7 @@ Packages are fixed-scope or semi-standardized engagements with clear deliverable
   {% for package in site.packages %}
     <article class="collection-card">
       <p class="eyebrow">{{ package.audience }}</p>
-      <h2><a href="{{ package.url | relative_url }}">{{ package.title }}</a></h2>
+      <h2>{{ package.title }}</h2>
       <p>{{ package.summary }}</p>
       {% if package.timeline %}
         <p><strong>Timeline:</strong> {{ package.timeline }}</p>
@@ -20,6 +20,7 @@ Packages are fixed-scope or semi-standardized engagements with clear deliverable
       {% if package.pricing_display %}
         <p><strong>Pricing:</strong> {{ package.pricing_display }}</p>
       {% endif %}
+      <a class="card-action" href="{{ package.url | relative_url }}">View package</a>
     </article>
   {% endfor %}
 </div>
