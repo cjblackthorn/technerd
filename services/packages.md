@@ -8,6 +8,17 @@ description: Fixed-scope and semi-standardized TechNerd service packages for sec
 
 Packages are fixed-scope or semi-standardized engagements with clear deliverables. They are useful for first-time clients, smaller organizations, predictable needs, and teams that need budget clarity.
 
+## Pricing Approach
+
+Package pricing depends on scope, timeline, available documentation, system access, stakeholder needs, and the amount of analysis or documentation required. Public package pages describe the engagement shape; final pricing is confirmed after discovery.
+
+Typical pricing language may use:
+
+- **Starting-at pricing** for bounded assessments with a predictable minimum scope.
+- **Scope-based quotes** when environment size, number of systems, or documentation depth affects effort.
+- **Custom proposals** for audit readiness, enterprise governance, or work involving multiple stakeholders and control areas.
+- **Reduced nonprofit consideration** when scope, timing, and availability allow.
+
 <div class="collection-grid">
   {% for package in site.packages %}
     <article class="collection-card">
@@ -24,5 +35,9 @@ Packages are fixed-scope or semi-standardized engagements with clear deliverable
     </article>
   {% endfor %}
 </div>
+
+## Before Work Begins
+
+Each package is confirmed with clear scope, expected deliverables, client responsibilities, timeline, access assumptions, and pricing approach before work starts.
 
 {% include page-cta.html %}

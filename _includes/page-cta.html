@@ -1,12 +1,14 @@
 <section class="page-cta" aria-labelledby="page-cta-title">
-  <p class="eyebrow">Next Step</p>
-  <h2 id="page-cta-title">Get a practical read on your security governance needs.</h2>
+  <p class="eyebrow">{{ page.cta_label | default: "Next Step" }}</p>
+  <h2 id="page-cta-title">{{ page.cta_title | default: "Get a practical read on your security governance needs." }}</h2>
   <p>
-    Remote consultation is available for scoped security governance, identity, audit readiness, risk, documentation, and practical security questions. TechNerd is currently accepting limited consultation requests.
+    {{ page.cta_text | default: "Remote consultation is available for scoped security governance, identity, audit readiness, risk, documentation, and practical security questions. TechNerd is currently accepting limited consultation requests." }}
   </p>
   <div class="button-row">
-    <a class="button button-primary" href="{{ '/request-consultation/' | relative_url }}">Request Consultation</a>
-    <a class="button button-secondary" href="mailto:technerdconsultingllc@gmail.com">Email TechNerd</a>
+    <a class="button button-primary" href="{{ page.cta_primary_url | default: '/request-consultation/' | relative_url }}">{{ page.cta_primary_label | default: "Request Consultation" }}</a>
+    {% unless page.hide_secondary_cta %}
+      <a class="button button-secondary" href="{{ page.cta_secondary_url | default: 'mailto:technerdconsultingllc@gmail.com' }}">{{ page.cta_secondary_label | default: "Email TechNerd" }}</a>
+    {% endunless %}
   </div>
   <ul class="trust-notes" aria-label="Consultation notes">
     <li>Discovery-first review</li>

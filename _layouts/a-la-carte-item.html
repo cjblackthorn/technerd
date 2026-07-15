@@ -27,12 +27,23 @@ layout: default
   {{ content }}
 
   {% if page.deliverables %}
-    <h2>Deliverables</h2>
-    <ul>
-      {% for item in page.deliverables %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
+    <section class="offer-section">
+      <h2>Deliverables</h2>
+      <ul>
+        {% for item in page.deliverables %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.best_next_step %}
+    <section class="engagement-next-step" aria-labelledby="best-next-step-heading">
+      <p class="eyebrow">Best Next Step</p>
+      <h2 id="best-next-step-heading">{{ page.best_next_step.title }}</h2>
+      <p>{{ page.best_next_step.description }}</p>
+      <a class="button button-primary" href="{{ page.best_next_step.url | default: '/request-consultation/' | relative_url }}">{{ page.best_next_step.cta | default: "Request Consultation" }}</a>
+    </section>
   {% endif %}
 
   {% include related-links.html %}

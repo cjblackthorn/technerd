@@ -8,12 +8,22 @@ ideal_client: Organizations with stale access, audit concerns, unclear ownership
 timeline: Typically 2-4 weeks depending on environment complexity
 pricing_mode: range
 pricing_display: Scope-based quote
+problems:
+  - Accounts, privileges, shared access, or dormant users need a clearer risk picture.
+  - Access reviews are difficult because ownership or populations are unclear.
+  - Joiner, mover, and leaver processes are inconsistent across systems.
+  - Leaders need a practical identity governance roadmap before larger investment.
 scope:
   - Account inventory review
   - Privileged account review
   - Dormant and questionable account review
   - Shared account review
   - Joiner, mover, and leaver process review
+not_included:
+  - Full IGA platform implementation
+  - Emergency incident response
+  - Password resets or help desk account administration
+  - Automated remediation unless separately scoped
 deliverables:
   - Identity risk summary
   - Access governance findings
@@ -39,6 +49,14 @@ related_frameworks:
     url: /frameworks/identity-governance-maturity-model/
   - title: Application Ownership Framework
     url: /frameworks/application-ownership-framework/
+best_next_step:
+  title: Start with an identity scope review.
+  description: Identify the systems, account sources, ownership concerns, and audit or risk drivers before any data exchange.
+  cta: Discuss identity governance support
+  url: /request-consultation/
+cta_title: Discuss identity and access governance support.
+cta_text: Share the systems, ownership concerns, audit pressure, or stale access issues you need to understand. TechNerd will help shape a right-sized health check.
+cta_primary_label: Discuss identity governance support
 ---
 
 The Identity & Access Health Check helps organizations understand who has access, where the risk lives, and which governance improvements should happen first.

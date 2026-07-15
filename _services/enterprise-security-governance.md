@@ -15,6 +15,11 @@ deliverables:
   - Remediation roadmaps
   - Access governance recommendations
   - Executive-ready findings and next steps
+engagement_model:
+  - Discovery confirms the control area, risk driver, stakeholder group, and desired outcome.
+  - Work is scoped around governance, identity, audit readiness, cloud ownership, or remediation needs.
+  - Findings are translated into practical recommendations, documentation, or roadmap artifacts.
+  - Implementation support can be scoped separately when remediation requires deeper execution.
 related_projects:
   - title: Enterprise External Active Directory Governance & Cleanup
     url: /projects/enterprise-external-active-directory-governance-cleanup/
@@ -35,6 +40,14 @@ related_frameworks:
     url: /frameworks/audit-readiness-framework/
   - title: Application Ownership Framework
     url: /frameworks/application-ownership-framework/
+best_next_step:
+  title: Start with a governance discovery conversation.
+  description: Bring the control, identity, audit, ownership, or remediation concern that needs structure.
+  cta: Discuss enterprise governance support
+  url: /request-consultation/
+cta_title: Discuss enterprise security and governance support.
+cta_text: Share the governance, identity, audit readiness, cloud ownership, or remediation problem you need to structure. TechNerd will help identify a practical engagement path.
+cta_primary_label: Discuss governance support
 ---
 
 Enterprise security work is rarely only technical. It depends on clear ownership, repeatable evidence, durable controls, realistic operating models, and communication that works for both technical and business stakeholders.

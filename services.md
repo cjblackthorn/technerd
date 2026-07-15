@@ -60,4 +60,17 @@ Most work starts with discovery. Pricing and deliverables depend on scope, urgen
 
 Strategic consulting is generally proposal-based. Packages can use fixed-scope, starting-at, range, or quote-based pricing without changing the page structure.
 
+## Fee Schedule Philosophy
+
+TechNerd uses flexible fee language because governance, identity, audit readiness, and practical security work vary significantly by environment. A small organization may need a focused assessment and roadmap; an enterprise team may need stakeholder interviews, control review, evidence analysis, and remediation planning.
+
+Common engagement shapes include:
+
+- **Fixed-scope package:** Best for bounded reviews with clear deliverables.
+- **A la carte service:** Best for focused documents, briefings, workshops, or targeted reviews.
+- **Custom proposal:** Best for enterprise governance, audit readiness, remediation, or multi-team advisory work.
+- **Advisory session:** Best when leadership needs a practical read before committing to a larger engagement.
+
+No work begins until scope, assumptions, deliverables, timeline, and pricing approach are clear.
+
 {% include page-cta.html %}
