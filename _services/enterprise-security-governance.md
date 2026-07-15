@@ -26,6 +26,15 @@ related_insights:
 related_resources:
   - title: Access Review Checklist
     url: /resources/access-review-checklist/
+  - title: Application Ownership Matrix
+    url: /resources/application-ownership-matrix/
+related_frameworks:
+  - title: Identity Governance Maturity Model
+    url: /frameworks/identity-governance-maturity-model/
+  - title: Audit Readiness Framework
+    url: /frameworks/audit-readiness-framework/
+  - title: Application Ownership Framework
+    url: /frameworks/application-ownership-framework/
 ---
 
 Enterprise security work is rarely only technical. It depends on clear ownership, repeatable evidence, durable controls, realistic operating models, and communication that works for both technical and business stakeholders.

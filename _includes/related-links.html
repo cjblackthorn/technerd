@@ -1,5 +1,5 @@
 {% assign has_related = false %}
-{% if page.related_services or page.related_projects or page.related_insights or page.related_resources or page.related_packages %}
+{% if page.related_services or page.related_projects or page.related_insights or page.related_resources or page.related_packages or page.related_frameworks %}
   {% assign has_related = true %}
 {% endif %}
 
@@ -47,6 +47,15 @@
     <h3>Resources</h3>
     <ul>
       {% for item in page.related_resources %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.related_frameworks %}
+    <h3>Frameworks</h3>
+    <ul>
+      {% for item in page.related_frameworks %}
         <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
       {% endfor %}
     </ul>

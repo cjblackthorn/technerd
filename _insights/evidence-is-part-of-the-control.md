@@ -19,6 +19,14 @@ related_packages:
 related_projects:
   - title: IAM Audit Support
     url: /projects/iam-audit-support/
+related_resources:
+  - title: Audit Evidence Checklist
+    url: /resources/audit-evidence-checklist/
+related_frameworks:
+  - title: Evidence Quality Framework
+    url: /frameworks/evidence-quality-framework/
+  - title: Audit Readiness Framework
+    url: /frameworks/audit-readiness-framework/
 ---
 
 Evidence is not paperwork after the fact. Evidence is part of the control design.

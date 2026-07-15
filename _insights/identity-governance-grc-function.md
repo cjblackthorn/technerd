@@ -31,11 +31,20 @@ related_packages:
 related_resources:
   - title: Access Review Checklist
     url: /resources/access-review-checklist/
+  - title: Identity Governance Assessment
+    url: /resources/identity-governance-assessment/
+  - title: Application Ownership Matrix
+    url: /resources/application-ownership-matrix/
 related_insights:
   - title: Evidence Is Part of the Control
     url: /insights/evidence-is-part-of-the-control/
   - title: Seven Reasons Access Reviews Fail Audits
     url: /insights/seven-reasons-access-reviews-fail-audits/
+related_frameworks:
+  - title: Identity Governance Maturity Model
+    url: /frameworks/identity-governance-maturity-model/
+  - title: Application Ownership Framework
+    url: /frameworks/application-ownership-framework/
 ---
 
 When people hear *identity management*, they often think of usernames, passwords, account creation, or the help desk resetting someone’s access. Even within information technology, identity can be treated mainly as an operational discipline: create the account, assign the groups, connect the application, and close the ticket.

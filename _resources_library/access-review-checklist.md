@@ -11,6 +11,11 @@ related_services:
 related_insights:
   - title: Seven Reasons Access Reviews Fail Audits
     url: /insights/seven-reasons-access-reviews-fail-audits/
+related_frameworks:
+  - title: Identity Governance Maturity Model
+    url: /frameworks/identity-governance-maturity-model/
+  - title: Evidence Quality Framework
+    url: /frameworks/evidence-quality-framework/
 ---
 
 Use this checklist to shape access review planning:

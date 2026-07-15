@@ -31,6 +31,14 @@ related_insights:
     url: /insights/evidence-is-part-of-the-control/
   - title: Identity Governance Is a GRC Function—Not Just an IT Function
     url: /insights/identity-governance-grc-function/
+related_resources:
+  - title: Audit Evidence Checklist
+    url: /resources/audit-evidence-checklist/
+related_frameworks:
+  - title: Evidence Quality Framework
+    url: /frameworks/evidence-quality-framework/
+  - title: Audit Readiness Framework
+    url: /frameworks/audit-readiness-framework/
 ---
 
 An organization’s information security policy states that access must be removed promptly when an employee, contractor, or other authorized user leaves. The policy has been reviewed, approved by leadership, published in the official document repository, and placed on an annual review schedule.

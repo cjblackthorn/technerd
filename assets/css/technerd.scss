@@ -366,6 +366,43 @@ summary:focus-visible,
   padding-bottom: 1rem;
 }
 
+.breadcrumbs {
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0;
+}
+
+.breadcrumbs li + li::before {
+  content: "/";
+  color: rgba(203,213,225,0.44);
+}
+
+.breadcrumbs a {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: rgba(203,213,225,0.78);
+}
+
 .page-shell h1 {
   max-width: 14ch;
   margin: 0 0 1.4rem;
@@ -402,6 +439,21 @@ summary:focus-visible,
 
 .page-shell li {
   margin-bottom: 0.65rem;
+}
+
+.content-detail {
+  position: relative;
+}
+
+.content-detail > .eyebrow:first-child {
+  margin-bottom: 0.9rem;
+}
+
+.content-detail .page-intro {
+  max-width: 68ch;
+  color: rgba(203,213,225,0.9);
+  font-size: clamp(1.08rem, 2vw, 1.22rem);
+  line-height: 1.75;
 }
 
 .page-shell a:not(.button) {

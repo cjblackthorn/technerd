@@ -1,0 +1,117 @@
+{% assign schema_type = "WebPage" %}
+{% if page.collection == "insights" %}
+  {% assign schema_type = "Article" %}
+{% elsif page.collection == "services" or page.collection == "packages" or page.collection == "a_la_carte" %}
+  {% assign schema_type = "Service" %}
+{% elsif page.collection == "projects" %}
+  {% assign schema_type = "CaseStudy" %}
+{% elsif page.collection == "frameworks" or page.collection == "resources_library" %}
+  {% assign schema_type = "CreativeWork" %}
+{% endif %}
+{% assign page_name = meta_title | default: site.title %}
+{% assign page_description = meta_description | default: site.description %}
+{% assign parent_label = nil %}
+{% assign parent_url = nil %}
+{% case page.collection %}
+  {% when "services" %}
+    {% assign parent_label = "Services" %}
+    {% assign parent_url = "/services/" %}
+  {% when "packages" %}
+    {% assign parent_label = "Service Packages" %}
+    {% assign parent_url = "/services/packages/" %}
+  {% when "a_la_carte" %}
+    {% assign parent_label = "A La Carte Services" %}
+    {% assign parent_url = "/services/a-la-carte/" %}
+  {% when "projects" %}
+    {% assign parent_label = "Projects" %}
+    {% assign parent_url = "/projects/" %}
+  {% when "insights" %}
+    {% assign parent_label = "Insights" %}
+    {% assign parent_url = "/insights/" %}
+  {% when "resources_library" %}
+    {% assign parent_label = "Resources" %}
+    {% assign parent_url = "/resources/" %}
+  {% when "frameworks" %}
+    {% assign parent_label = "Frameworks" %}
+    {% assign parent_url = "/frameworks/" %}
+{% endcase %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": {{ site.url | append: "/#organization" | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "email": {{ site.email | jsonify }},
+      "logo": {{ "/assets/images/logo-mark.svg" | absolute_url | jsonify }},
+      "description": {{ site.description | jsonify }}
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ site.url | append: "/#website" | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "publisher": {
+        "@id": {{ site.url | append: "/#organization" | jsonify }}
+      }
+    },
+    {
+      "@type": {{ schema_type | jsonify }},
+      "@id": {{ page.url | absolute_url | append: "#content" | jsonify }},
+      "name": {{ page_name | jsonify }},
+      "headline": {{ page.title | default: site.title | jsonify }},
+      "description": {{ page_description | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "isPartOf": {
+        "@id": {{ site.url | append: "/#website" | jsonify }}
+      },
+      "publisher": {
+        "@id": {{ site.url | append: "/#organization" | jsonify }}
+      }{% if page.collection == "insights" %},
+      "author": {
+        "@type": "Person",
+        "name": {{ site.author | jsonify }}
+      }{% if page.date %},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.updated %},
+      "dateModified": {{ page.updated | date_to_xmlschema | jsonify }}{% endif %}{% elsif page.collection == "services" or page.collection == "packages" or page.collection == "a_la_carte" %},
+      "provider": {
+        "@id": {{ site.url | append: "/#organization" | jsonify }}
+      },
+      "areaServed": "United States",
+      "serviceType": {{ page.title | default: "Cybersecurity Consulting" | jsonify }}{% endif %}
+    }{% unless page.url == "/" %},
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ page.url | absolute_url | append: "#breadcrumb" | jsonify }},
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": {{ "/" | absolute_url | jsonify }}
+        }{% if parent_label and parent_url and page.url != parent_url %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ parent_label | jsonify }},
+          "item": {{ parent_url | absolute_url | jsonify }}
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.title | default: "Current Page" | jsonify }},
+          "item": {{ page.url | absolute_url | jsonify }}
+        }{% else %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | default: "Current Page" | jsonify }},
+          "item": {{ page.url | absolute_url | jsonify }}
+        }{% endif %}
+      ]
+    }{% endunless %}
+  ]
+}
+</script>

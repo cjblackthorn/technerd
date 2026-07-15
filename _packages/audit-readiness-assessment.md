@@ -29,6 +29,14 @@ related_services:
 related_insights:
   - title: Evidence Is Part of the Control
     url: /insights/evidence-is-part-of-the-control/
+related_resources:
+  - title: Audit Evidence Checklist
+    url: /resources/audit-evidence-checklist/
+related_frameworks:
+  - title: Audit Readiness Framework
+    url: /frameworks/audit-readiness-framework/
+  - title: Evidence Quality Framework
+    url: /frameworks/evidence-quality-framework/
 ---
 
 The Audit Readiness Assessment helps teams reduce audit friction by clarifying control intent, evidence expectations, ownership, and remediation needs before formal pressure arrives.

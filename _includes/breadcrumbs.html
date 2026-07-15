@@ -1,0 +1,37 @@
+{% unless page.url == "/" %}
+  {% assign parent_label = nil %}
+  {% assign parent_url = nil %}
+  {% case page.collection %}
+    {% when "services" %}
+      {% assign parent_label = "Services" %}
+      {% assign parent_url = "/services/" %}
+    {% when "packages" %}
+      {% assign parent_label = "Service Packages" %}
+      {% assign parent_url = "/services/packages/" %}
+    {% when "a_la_carte" %}
+      {% assign parent_label = "A La Carte Services" %}
+      {% assign parent_url = "/services/a-la-carte/" %}
+    {% when "projects" %}
+      {% assign parent_label = "Projects" %}
+      {% assign parent_url = "/projects/" %}
+    {% when "insights" %}
+      {% assign parent_label = "Insights" %}
+      {% assign parent_url = "/insights/" %}
+    {% when "resources_library" %}
+      {% assign parent_label = "Resources" %}
+      {% assign parent_url = "/resources/" %}
+    {% when "frameworks" %}
+      {% assign parent_label = "Frameworks" %}
+      {% assign parent_url = "/frameworks/" %}
+  {% endcase %}
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      {% if parent_label and parent_url and page.url != parent_url %}
+        <li><a href="{{ parent_url | relative_url }}">{{ parent_label }}</a></li>
+      {% endif %}
+      <li aria-current="page">{{ page.title | default: "Current Page" }}</li>
+    </ol>
+  </nav>
+{% endunless %}

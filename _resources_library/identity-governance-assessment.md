@@ -11,6 +11,11 @@ related_services:
 related_packages:
   - title: Identity & Access Health Check
     url: /services/packages/identity-access-health-check/
+related_frameworks:
+  - title: Identity Governance Maturity Model
+    url: /frameworks/identity-governance-maturity-model/
+  - title: Application Ownership Framework
+    url: /frameworks/application-ownership-framework/
 ---
 
 Use these prompts to assess identity governance maturity:

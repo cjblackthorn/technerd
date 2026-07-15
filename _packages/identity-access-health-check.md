@@ -29,6 +29,16 @@ related_services:
 related_projects:
   - title: Enterprise External Active Directory Governance & Cleanup
     url: /projects/enterprise-external-active-directory-governance-cleanup/
+related_resources:
+  - title: Identity Governance Assessment
+    url: /resources/identity-governance-assessment/
+  - title: Application Ownership Matrix
+    url: /resources/application-ownership-matrix/
+related_frameworks:
+  - title: Identity Governance Maturity Model
+    url: /frameworks/identity-governance-maturity-model/
+  - title: Application Ownership Framework
+    url: /frameworks/application-ownership-framework/
 ---
 
 The Identity & Access Health Check helps organizations understand who has access, where the risk lives, and which governance improvements should happen first.

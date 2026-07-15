@@ -11,6 +11,11 @@ related_insights:
 related_packages:
   - title: Audit Readiness Assessment
     url: /services/packages/audit-readiness-assessment/
+related_frameworks:
+  - title: Evidence Quality Framework
+    url: /frameworks/evidence-quality-framework/
+  - title: Audit Readiness Framework
+    url: /frameworks/audit-readiness-framework/
 ---
 
 Good evidence should make the control understandable:
