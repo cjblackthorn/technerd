@@ -410,6 +410,41 @@ summary:focus-visible,
   text-underline-offset: 0.18em;
 }
 
+.page-shell table {
+  display: block;
+  width: 100%;
+  margin: 1.6rem 0 2rem;
+  overflow-x: auto;
+  border: 1px solid rgba(103,232,249,0.12);
+  border-radius: var(--radius-lg);
+  border-spacing: 0;
+  background: rgba(15,23,42,0.55);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.page-shell th,
+.page-shell td {
+  min-width: 12rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid rgba(103,232,249,0.09);
+  color: var(--text-secondary);
+  text-align: left;
+  vertical-align: top;
+}
+
+.page-shell th {
+  color: var(--text-primary);
+  background: rgba(103,232,249,0.07);
+  font-size: 0.86rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.page-shell tr:last-child td {
+  border-bottom: 0;
+}
+
 .page-shell .page-cta h2 {
   padding-top: 0;
   border-top: 0;
