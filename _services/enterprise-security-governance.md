@@ -23,6 +23,8 @@ engagement_model:
 related_projects:
   - title: Enterprise External Active Directory Governance & Cleanup
     url: /projects/enterprise-external-active-directory-governance-cleanup/
+  - title: Azure Storage & Key Vault Governance
+    url: /projects/azure-storage-key-vault-governance/
   - title: IAM Audit Support
     url: /projects/iam-audit-support/
 related_insights:

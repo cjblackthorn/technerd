@@ -120,6 +120,25 @@ description: Enterprise security experience. Practical solutions for organizatio
   </div>
 </section>
 
+<section class="section-block proof-band">
+  <p class="eyebrow">Proof Themes</p>
+  <h2>Patterns from real governance work.</h2>
+  <div class="proof-grid">
+    <div class="proof-point">
+      <span>01</span>
+      <p>Turning technical access data into business ownership, review decisions, and remediation follow-through.</p>
+    </div>
+    <div class="proof-point">
+      <span>02</span>
+      <p>Making control evidence easier to explain, defend, and improve before audit pressure peaks.</p>
+    </div>
+    <div class="proof-point">
+      <span>03</span>
+      <p>Clarifying cloud resource ownership, certificate accountability, access expectations, and remediation paths.</p>
+    </div>
+  </div>
+</section>
+
 <section class="section-block section-intro-left">
   <p class="eyebrow">Selected Projects</p>
   <h2>Proof through anonymized bodies of work.</h2>
@@ -129,6 +148,13 @@ description: Enterprise security experience. Practical solutions for organizatio
         <p class="eyebrow">{{ project.classification }}</p>
         <h3>{{ project.title }}</h3>
         <p>{{ project.summary }}</p>
+        {% if project.focus_areas %}
+          <ul class="tag-list" aria-label="{{ project.title }} focus areas">
+            {% for item in project.focus_areas limit:3 %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
         <a class="card-action" href="{{ project.url | relative_url }}">View case study</a>
       </article>
     {% endfor %}

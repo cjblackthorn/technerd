@@ -10,6 +10,22 @@ TechNerd Consulting provides enterprise-informed cybersecurity governance, ident
 
 The service hierarchy is intentional: enterprise security and governance are the primary body of work; small-business and nonprofit services are a right-sized secondary path informed by that enterprise experience.
 
+## Work These Services Support
+
+<div class="collection-grid proof-card-grid">
+  {% for project in site.projects limit:3 %}
+    <article class="collection-card">
+      <p class="eyebrow">{{ project.classification }}</p>
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.summary }}</p>
+      {% if project.proof_points %}
+        <p class="detail-meta"><strong>Proof signal:</strong> {{ project.proof_points | first }}</p>
+      {% endif %}
+      <a class="card-action" href="{{ project.url | relative_url }}">View case study</a>
+    </article>
+  {% endfor %}
+</div>
+
 ## Service Paths
 
 <div class="collection-grid">

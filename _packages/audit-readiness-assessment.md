@@ -36,6 +36,9 @@ client_responsibilities:
 related_services:
   - title: Enterprise Security & Governance
     url: /services/enterprise-security-governance/
+related_projects:
+  - title: IAM Audit Support
+    url: /projects/iam-audit-support/
 related_insights:
   - title: Evidence Is Part of the Control
     url: /insights/evidence-is-part-of-the-control/

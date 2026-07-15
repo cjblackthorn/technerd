@@ -18,26 +18,84 @@ layout: default
       <dt>Role</dt>
       <dd>{{ page.role }}</dd>
     {% endif %}
+    {% if page.focus_areas %}
+      <dt>Focus Areas</dt>
+      <dd>{{ page.focus_areas | join: ", " }}</dd>
+    {% endif %}
+    {% if page.engagement_type %}
+      <dt>Engagement Type</dt>
+      <dd>{{ page.engagement_type }}</dd>
+    {% endif %}
   </dl>
+
+  {% if page.proof_points %}
+    <section class="proof-summary" aria-labelledby="proof-summary-heading">
+      <p class="eyebrow">Proof Points</p>
+      <h2 id="proof-summary-heading">What this work demonstrates</h2>
+      <div class="proof-grid">
+        {% for item in page.proof_points %}
+          <div class="proof-point">
+            <span>{{ forloop.index | prepend: "0" }}</span>
+            <p>{{ item }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 
   {{ content }}
 
+  {% if page.approach %}
+    <section class="offer-section">
+      <h2>Approach</h2>
+      <ul>
+        {% for item in page.approach %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
   {% if page.governance_impact %}
-    <h2>Governance Impact</h2>
-    <ul>
-      {% for item in page.governance_impact %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
+    <section class="offer-section">
+      <h2>Governance Impact</h2>
+      <ul>
+        {% for item in page.governance_impact %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
   {% endif %}
 
   {% if page.deliverables %}
-    <h2>Deliverables</h2>
-    <ul>
-      {% for item in page.deliverables %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
+    <section class="offer-section">
+      <h2>Deliverables</h2>
+      <ul>
+        {% for item in page.deliverables %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.risk_reduced %}
+    <section class="offer-section">
+      <h2>Risk Reduced</h2>
+      <ul>
+        {% for item in page.risk_reduced %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.best_next_step %}
+    <section class="engagement-next-step">
+      <p class="eyebrow">Relevant Next Step</p>
+      <h2>{{ page.best_next_step.title }}</h2>
+      <p>{{ page.best_next_step.description }}</p>
+      <a class="button button-primary" href="{{ page.best_next_step.url | relative_url }}">{{ page.best_next_step.label | default: "Request Consultation" }}</a>
+    </section>
   {% endif %}
 
   {% include related-links.html %}

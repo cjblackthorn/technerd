@@ -799,6 +799,100 @@ summary:focus-visible,
   margin-top: 0.85rem;
 }
 
+.proof-summary,
+.proof-band {
+  margin: 3rem 0;
+  padding: 1.65rem;
+  border: 1px solid rgba(103,232,249,0.14);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(103,232,249,0.075), transparent 44%),
+    rgba(15,23,42,0.62);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.proof-band {
+  padding: 4rem;
+}
+
+.proof-summary-compact {
+  margin-bottom: 2.5rem;
+}
+
+.proof-summary h2,
+.proof-band h2 {
+  margin-top: 0.35rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.proof-point {
+  min-height: 100%;
+  padding: 1.15rem;
+  border: 1px solid rgba(167,243,208,0.13);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(145deg, rgba(15, 28, 46, 0.8), rgba(8, 18, 37, 0.66)),
+    rgba(15,23,42,0.72);
+}
+
+.proof-point span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.9rem;
+  border: 1px solid rgba(103,232,249,0.2);
+  border-radius: 999px;
+  color: var(--accent-secondary);
+  background: rgba(103,232,249,0.06);
+  font-size: 0.76rem;
+  font-weight: 950;
+}
+
+.proof-point p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1rem 0 1.25rem;
+  padding: 0;
+}
+
+.tag-list li {
+  margin: 0;
+  padding: 0.34rem 0.62rem;
+  border: 1px solid rgba(103,232,249,0.14);
+  border-radius: 999px;
+  background: rgba(103,232,249,0.055);
+  color: rgba(203,213,225,0.9);
+  font-size: 0.82rem;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.page-shell .tag-list {
+  padding: 0;
+}
+
+.page-shell .tag-list li {
+  margin-bottom: 0;
+}
+
 .framework-model {
   position: relative;
   isolation: isolate;
@@ -1055,6 +1149,11 @@ summary:focus-visible,
   }
 
   .page-cta {
+    padding: 1.45rem;
+  }
+
+  .proof-band,
+  .proof-summary {
     padding: 1.45rem;
   }
 
