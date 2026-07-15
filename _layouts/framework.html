@@ -9,6 +9,8 @@ layout: default
     <p class="page-intro">{{ page.summary }}</p>
   {% endif %}
 
+  {% include framework-model.html %}
+
   {{ content }}
 
   {% if page.components %}

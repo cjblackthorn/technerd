@@ -9,6 +9,21 @@ components:
   - Privileged and exception access governance
   - Evidence and audit readiness
   - Remediation tracking and continuous improvement
+visual_model:
+  label: Maturity Model
+  title: Five Stages of Identity Governance Maturity
+  summary: Identity governance matures as access work moves from reactive administration into accountable, evidenced, risk-aware governance.
+  steps:
+    - title: Informal
+      description: Access is handled reactively, ownership is unclear, and evidence depends on individual memory.
+    - title: Documented
+      description: Core lifecycle and review processes are written down, but operation still varies by system or team.
+    - title: Accountable
+      description: Business and technical owners understand responsibilities, and access decisions can be traced.
+    - title: Measured
+      description: Review quality, exceptions, remediation, and lifecycle failures are tracked with useful metrics.
+    - title: Governed
+      description: Identity controls are risk-aware, auditable, continuously improved, and connected to security governance.
 related_services:
   - title: Enterprise Security & Governance
     url: /services/enterprise-security-governance/

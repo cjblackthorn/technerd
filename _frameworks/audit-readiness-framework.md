@@ -9,6 +9,23 @@ components:
   - Walkthrough readiness
   - Exception and remediation tracking
   - Continuous readiness rhythm
+visual_model:
+  label: Readiness Model
+  title: Six Layers of Audit Readiness
+  summary: Audit readiness improves when control clarity, evidence, ownership, walkthroughs, remediation, and operating rhythm reinforce each other.
+  steps:
+    - title: Control Clarity
+      description: Define purpose, scope, frequency, owner, evidence expectation, and success criteria.
+    - title: Operating Evidence
+      description: Produce evidence as part of the control activity instead of reconstructing proof later.
+    - title: Ownership Alignment
+      description: Clarify responsibilities across business, technical, risk, compliance, and audit stakeholders.
+    - title: Walkthrough Readiness
+      description: Prepare control owners to explain the process, demonstrate operation, and answer follow-up questions.
+    - title: Exception Discipline
+      description: Document gaps, risk-rank issues, assign owners, and track remediation to closure.
+    - title: Continuous Rhythm
+      description: Review control health regularly instead of waiting for formal audit request cycles.
 related_services:
   - title: Enterprise Security & Governance
     url: /services/enterprise-security-governance/
@@ -39,4 +56,3 @@ This framework helps teams evaluate whether audit readiness is supported by dura
 ## Practical Use
 
 Use this framework before an audit, after a finding, during control redesign, or when evidence requests repeatedly create confusion. The goal is to reduce audit friction by improving the operating model behind the evidence.
-

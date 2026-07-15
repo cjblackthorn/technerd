@@ -9,6 +9,23 @@ components:
   - Authenticity
   - Reviewability
   - Remediation linkage
+visual_model:
+  label: Evidence Model
+  title: Six Dimensions of Evidence Quality
+  summary: Strong evidence helps reviewers understand what happened, why it matters, who was accountable, and how exceptions were resolved.
+  steps:
+    - title: Completeness
+      description: Show the population, timeframe, action, outcome, owner, and exceptions.
+    - title: Traceability
+      description: Connect evidence back to the system, request, approval, ticket, report, or control activity.
+    - title: Timeliness
+      description: Align the evidence with the control frequency and show when the activity occurred.
+    - title: Authenticity
+      description: Use credible sources and avoid manual transformations that weaken trust.
+    - title: Reviewability
+      description: Make the evidence understandable to someone outside the producing team.
+    - title: Remediation Linkage
+      description: Connect exceptions to owners, due dates, remediation actions, and closure evidence.
 related_services:
   - title: Enterprise Security & Governance
     url: /services/enterprise-security-governance/
@@ -41,4 +58,3 @@ This framework helps teams evaluate whether evidence will answer the likely audi
 ## Practical Use
 
 Use this model when designing evidence requirements, preparing for an audit, improving access reviews, writing control narratives, or cleaning up historical evidence practices.
-

@@ -1,0 +1,21 @@
+{% if page.visual_model %}
+  <section class="framework-model" aria-labelledby="framework-model-heading">
+    <div class="framework-model-header">
+      <p class="eyebrow">{{ page.visual_model.label | default: "Visual Model" }}</p>
+      <h2 id="framework-model-heading">{{ page.visual_model.title | default: "Framework Model" }}</h2>
+      {% if page.visual_model.summary %}
+        <p>{{ page.visual_model.summary }}</p>
+      {% endif %}
+    </div>
+
+    <ol class="framework-model-grid">
+      {% for item in page.visual_model.steps %}
+        <li class="framework-model-item">
+          <span class="model-step-number">{{ forloop.index }}</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+{% endif %}

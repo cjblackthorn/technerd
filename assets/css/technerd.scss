@@ -753,6 +753,103 @@ summary:focus-visible,
   margin: 0;
 }
 
+.framework-model {
+  position: relative;
+  isolation: isolate;
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: 1px solid rgba(103,232,249,0.14);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(103,232,249,0.08), transparent 46%),
+    rgba(15,23,42,0.68);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.framework-model::before {
+  content: "";
+  position: absolute;
+  inset: 1.5rem 1.5rem auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(103,232,249,0.26), transparent);
+  pointer-events: none;
+}
+
+.framework-model-header {
+  max-width: 62ch;
+  margin-bottom: 1.5rem;
+}
+
+.framework-model-header h2 {
+  margin-top: 0.45rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.framework-model-header p:not(.eyebrow) {
+  color: var(--text-secondary);
+}
+
+.framework-model-grid {
+  counter-reset: model-step;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 0.95rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.framework-model-item {
+  counter-increment: model-step;
+  position: relative;
+  min-height: 100%;
+  margin-bottom: 0;
+  padding: 1.15rem;
+  border: 1px solid rgba(103,232,249,0.12);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(145deg, rgba(15, 28, 46, 0.82), rgba(8, 18, 37, 0.68)),
+    rgba(15,23,42,0.72);
+}
+
+.framework-model-item::after {
+  content: "";
+  position: absolute;
+  inset: auto 1.15rem 0;
+  height: 3px;
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(90deg, var(--accent-primary), rgba(167,243,208,0.24));
+}
+
+.model-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.9rem;
+  border: 1px solid rgba(103,232,249,0.22);
+  border-radius: 999px;
+  color: var(--accent-secondary);
+  background: rgba(103,232,249,0.06);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.framework-model-item h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.framework-model-item p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
 .related-links {
   margin-top: 3rem;
   background:

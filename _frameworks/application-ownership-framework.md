@@ -9,6 +9,23 @@ components:
   - Access and identity accountability
   - Operational support ownership
   - Evidence and audit accountability
+visual_model:
+  label: Ownership Model
+  title: Six Layers of Application Accountability
+  summary: Application ownership becomes useful when business, technical, data, access, support, and evidence responsibilities are separated clearly.
+  steps:
+    - title: Business Owner
+      description: Owns business purpose, user population, acceptable use, and business impact.
+    - title: Technical Owner
+      description: Owns configuration, integrations, platform health, and technical remediation.
+    - title: Data Owner
+      description: Owns data sensitivity, classification, retention expectations, and handling risk.
+    - title: Access Owner
+      description: Owns access approval, review criteria, privileged access, and entitlement appropriateness.
+    - title: Support Owner
+      description: Owns operational support, incident intake, escalation, and continuity responsibilities.
+    - title: Evidence Owner
+      description: Owns or coordinates evidence for audit, risk, compliance, and governance requests.
 related_services:
   - title: Enterprise Security & Governance
     url: /services/enterprise-security-governance/
@@ -39,4 +56,3 @@ This framework helps organizations separate different kinds of ownership instead
 ## Practical Use
 
 Use this framework when application inventories are stale, access reviews lack accountable reviewers, cloud resources have unclear ownership, or audit requests repeatedly bounce between teams.
-
