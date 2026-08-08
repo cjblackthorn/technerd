@@ -10,11 +10,15 @@
   url: /services/small-business-nonprofit-security/
   summary: Right-sized security reviews, identity guidance, policy support, and practical technology governance for smaller organizations.
   priority: secondary
+- title: Web Design, E-Commerce & Digital Presence
+  url: /services/web-design-ecommerce-digital-presence/
+  summary: Professional websites, Shopify stores, personal brands, publishing platforms, and custom web solutions built around real business needs.
+  priority: supporting
 - title: Service Packages
   url: /services/packages/
   summary: Fixed-scope and semi-standardized engagements with clear deliverables, timelines, and pricing display options.
   priority: supporting
 - title: A La Carte Services
   url: /services/a-la-carte/
-  summary: Focused workshops, reviews, documentation, control support, and advisory sessions.
+  summary: Focused workshops, reviews, documentation, control support, website care, and advisory sessions.
   priority: supporting
