@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Services
-description: Cybersecurity governance, identity governance, audit readiness, strategic advisory, and right-sized security services from TechNerd Consulting.
+description: Cybersecurity governance, identity governance, audit readiness, strategic advisory, web design, e-commerce, and right-sized technology services from TechNerd Consulting.
 ---
 
 # Services
 
-TechNerd Consulting provides enterprise-informed cybersecurity governance, identity, risk, audit readiness, and practical security consulting.
+TechNerd Consulting provides enterprise-informed cybersecurity governance, identity, risk, audit readiness, strategic advisory, and practical technology consulting. Supporting services also include professional website design, e-commerce implementation, and digital presence work for businesses, professionals, authors, creators, and organizations.
 
-The service hierarchy is intentional: enterprise security and governance are the primary body of work; small-business and nonprofit services are a right-sized secondary path informed by that enterprise experience.
+The service hierarchy is intentional: enterprise security and governance remain the primary body of work. Small-business security and web services are right-sized supporting paths informed by broader technical, operational, and business experience.
 
 ## Work These Services Support
 
@@ -60,7 +60,7 @@ The service hierarchy is intentional: enterprise security and governance are the
 Focused services can stand alone or supplement packages and strategic engagements.
 
 <div class="collection-grid">
-  {% for item in site.a_la_carte limit:6 %}
+  {% for item in site.a_la_carte limit:8 %}
     <article class="collection-card">
       <p class="eyebrow">{{ item.category }}</p>
       <h2>{{ item.title }}</h2>
@@ -72,21 +72,23 @@ Focused services can stand alone or supplement packages and strategic engagement
 
 ## How Services Are Scoped
 
-Most work starts with discovery. Pricing and deliverables depend on scope, urgency, system access, technical complexity, risk, stakeholders, and the level of documentation or implementation needed.
+Most work starts with discovery. Pricing and deliverables depend on scope, urgency, system access, technical complexity, risk, stakeholders, content readiness, integrations, and the level of documentation or implementation needed.
 
-Strategic consulting is generally proposal-based. Packages can use fixed-scope, starting-at, range, or quote-based pricing without changing the page structure.
+Strategic consulting is generally proposal-based. Packages can use fixed-scope, starting-at, range, or quote-based pricing without changing the page structure. Website and e-commerce projects use the same principle: start with a defined business need, establish a bounded scope, identify third-party costs, and agree on change handling before work begins.
 
 ## Fee Schedule Philosophy
 
-TechNerd uses flexible fee language because governance, identity, audit readiness, and practical security work vary significantly by environment. A small organization may need a focused assessment and roadmap; an enterprise team may need stakeholder interviews, control review, evidence analysis, and remediation planning.
+TechNerd uses flexible fee language because governance, identity, audit readiness, practical security, and web work vary significantly by environment. A small organization may need a focused assessment and roadmap; an enterprise team may need stakeholder interviews, control review, evidence analysis, and remediation planning. A website project may range from a bounded Shopify launch to a custom solution with integrations and business logic.
 
 Common engagement shapes include:
 
-- **Fixed-scope package:** Best for bounded reviews with clear deliverables.
-- **A la carte service:** Best for focused documents, briefings, workshops, or targeted reviews.
-- **Custom proposal:** Best for enterprise governance, audit readiness, remediation, or multi-team advisory work.
+- **Fixed-scope package:** Best for bounded reviews, website launches, and implementation work with clear deliverables.
+- **A la carte service:** Best for focused documents, briefings, workshops, maintenance, targeted reviews, or limited support.
+- **Custom proposal:** Best for enterprise governance, audit readiness, remediation, complex web development, integrations, or multi-team advisory work.
 - **Advisory session:** Best when leadership needs a practical read before committing to a larger engagement.
 
-No work begins until scope, assumptions, deliverables, timeline, and pricing approach are clear.
+Flexible payment arrangements may be available for qualifying small businesses and nonprofit organizations. Third-party platform, hosting, domain, licensing, theme, application, transaction, and vendor fees are separate unless explicitly included in a proposal.
+
+No work begins until scope, assumptions, deliverables, timeline, responsibilities, and pricing approach are clear.
 
 {% include page-cta.html %}
