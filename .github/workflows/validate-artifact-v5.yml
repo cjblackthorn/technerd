@@ -1,0 +1,49 @@
+name: Isolated TechNerd Pages artifact v5 check
+
+on:
+  push:
+    branches:
+      - validation/technerd-pages-artifact-v5-20261024
+
+permissions:
+  contents: read
+
+jobs:
+  validate-artifact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/configure-pages@v5
+      - name: Build existing Jekyll website
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Confirm Jekyll outputs
+        run: |
+          set -e
+          test -s _site/index.html
+          test -s _site/CNAME
+          test -s _site/assets/css/technerd.css
+      - name: Exercise upload-pages-artifact v5
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./_site
+      - name: Download exact uploaded Pages artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: .artifact-validation
+      - name: Inspect uploaded tar members
+        run: |
+          set -e
+          test -s .artifact-validation/artifact.tar
+          tar -tf .artifact-validation/artifact.tar > /tmp/site-members.txt
+          grep -Eq '(^|/)index.html$' /tmp/site-members.txt
+          grep -Eq '(^|/)CNAME$' /tmp/site-members.txt
+          grep -Eq '(^|/)assets/css/technerd.css$' /tmp/site-members.txt
+          echo "Artifact v5 uploaded successfully; expected site files packaged."
+          echo "There is no Pages deployment or pages:write permission in this workflow."
