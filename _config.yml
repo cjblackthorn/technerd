@@ -78,3 +78,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+# Canonical sitemap generated from the Jekyll pages and output collections.
+plugins:
+  - jekyll-sitemap
